@@ -26,3 +26,4 @@ hs_err_pid*
 
 # ignora cartella .idea creata da intellij
 .idea
+*.iml
