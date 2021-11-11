@@ -1,10 +1,4 @@
-# Dream-Team
 ## Compagnia Shared Mobility 🛵
-
-<p align="center">
-<img src="https://enjoy.eni.com/social_tagging_1200x630.jpg" class="center">
-</p>
-
 
 Una compagnia di [shared mobility](https://en.wikipedia.org/wiki/Shared_transport) vuole creare un'infrastruttura software per gestire i propri servizi e la proprio flotta. Il tipo di veicoli che offre agli utenti sono: automobili, moto scooter, biciclette, monopattini elettrici, furgoncini. La compagnia da un ID univoco interno ad ogni veicolo ma automobili, furgoncini e motorini hanno anche una targa.
 
