@@ -16,7 +16,7 @@ public class Utente {
         this.cognome = cognome;
         this.dataNascita = dataNascita;
         this.codiceFiscale = codiceFiscale;
-        this.credito = 0.00;
+        this.credito = 0.0f;
         this.casco = false;
     }
 
