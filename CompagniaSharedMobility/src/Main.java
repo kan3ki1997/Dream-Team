@@ -11,8 +11,7 @@ public class Main {
       ArrayList<Utente> utenti = new ArrayList<Utente>();
       double[] PosizioneIniziale = {0,0};
 
-      Automobile ferrari = new Automobile (2, PosizioneIniziale, false, 25.0,
-              30,0, "AA000AA");
+      Automobile ferrari = new Automobile (2, PosizioneIniziale, false, 25.0, 30.0f, "AA000AA");
 
    }
 
