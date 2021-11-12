@@ -1,5 +1,5 @@
 public abstract class Veicolo {
-   int ID;
+   String ID;
    double[] posizioneGPS;
    boolean affittato;
    double tariffa;
