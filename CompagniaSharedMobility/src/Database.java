@@ -17,6 +17,26 @@ public class Database {
         utenti.add(utente);
     }
 
+    public void eliminaAuto(Automobile automobile) {
+        automobili.remove(automobile);
+    }
+
+    public void eliminaScooter(Scooter scooter) {
+        scooters.remove(scooter);
+    }
+
+    public void eliminaFurgoncino (Furgoncino furgoncino) {
+        furgoncini.remove(furgoncino);
+    }
+
+    public void eliminaMonopattino (MonopattinoElettrico monopattinoElettrico) {
+        monopattiniElettrici.remove(monopattinoElettrico);
+    }
+
+    public void eliminaBici (Bici bicicletta) {
+        biciclette.remove(bicicletta);
+    }
+
     public List<Utente> getUtenti() {
         return utenti;
     }
