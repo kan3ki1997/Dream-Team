@@ -7,9 +7,16 @@ public class Noleggio {
     private Date dataInizio;
     private Date dataFine;
 
+    public Noleggio(Utente utente, Veicolo veicolo, Date dataInizio, Date dataFine) {
+        this.utente = utente;
+        this.veicolo = veicolo;
+        this.dataInizio = dataInizio;
+        this.dataFine = dataFine;
+    }
 
     // metodi
     public void registraUtente(){
+
 
     }
 
