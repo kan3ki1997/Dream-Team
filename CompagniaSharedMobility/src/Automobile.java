@@ -5,7 +5,7 @@ public class Automobile extends VeicoloBenzina {
     private List<Patente> patenteNecessaria = new ArrayList<Patente>();
 
     public Automobile() {
-        patenteNecessaria.add(Patente.A);
         patenteNecessaria.add(Patente.B);
     }
+
 }
