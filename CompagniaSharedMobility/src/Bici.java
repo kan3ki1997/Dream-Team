@@ -9,7 +9,9 @@ public class Bici extends VeicoloNonImmatricolato{
     public boolean isHaCasco() {
         return haCasco;
     }
-
+    /*
+    @param haCasco True se ha casco, false se non lo ha
+     */
     public void setHaCasco(boolean haCasco) {
         this.haCasco = haCasco;
     }
