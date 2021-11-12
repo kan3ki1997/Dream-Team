@@ -6,6 +6,7 @@ public class Scooter extends VeicoloBenzina{
     public Scooter(int id, double[] posizioneGPS, boolean affittato, double tariffa, float serbatoio, boolean haCasco, String targa, List<Patente> patenteNecessaria) {
         super(id,posizioneGPS,affittato,tariffa,serbatoio,targa,patenteNecessaria);
         this.haCasco = haCasco;
+        patenteNecessaria.add(Patente.A);
     }
 
     public boolean isHaCasco() {
