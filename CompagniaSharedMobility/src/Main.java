@@ -11,8 +11,8 @@ public class Main {
       ArrayList<Utente> utenti = new ArrayList<Utente>();
       double[] PosizioneIniziale = {0,0};
 
-      Automobile ferrari = new Automobile (2, PosizioneIniziale, false, 25.0,
-              30,0, "AA000AA");
+      Automobile ferrari = new Automobile (2, PosizioneIniziale, false, 25.0, 30.0f, "AA000AA");
+      Furgoncino piaggioPorter = new Furgoncino(3, PosizioneIniziale, false, 2, 30.0f, "BB123CC");
 
    }
 
@@ -23,6 +23,6 @@ public class Main {
       int indice = monopattini.size();
       int id = monopattini.size() + 1;
       double[] posizioneGPS = {0, 0};
-      //monopattini.add(new MonopattinoElettrico(monopattini.size() + 1, posizioneGPS, ));
+       monopattini.add(new MonopattinoElettrico(monopattini.size() + 1, posizioneGPS, "null", Patente.nisba));
    }
 }
