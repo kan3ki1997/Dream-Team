@@ -16,7 +16,7 @@ public class Noleggio {
     }
 
     // metodi
-    public void registraUtente() {
+    public void registraUtente(utente) {
         database.registrazioneUtente(this.utente);
 
     }
