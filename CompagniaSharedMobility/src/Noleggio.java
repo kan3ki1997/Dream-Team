@@ -32,11 +32,12 @@ public class Noleggio {
     }
 
     public void affittoVeicolo() {
+        this.veicolo.isAffittato(true);
 
     }
 
     public void fineNoleggio() {
-
+        this.veicolo.isAffittato(false);
     }
 
     // getters and setters
