@@ -17,6 +17,13 @@ public class Database {
         utenti.add(utente);
     }
 
+    public boolean cercaUtente(Utente utente) {
+    int index = utenti.indexOf(utente);
+    if (index == -1)
+        return false;
+    return true;
+    }
+
     public void eliminaAuto(Automobile automobile) {
         automobili.remove(automobile);
     }
