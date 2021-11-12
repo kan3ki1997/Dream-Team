@@ -4,6 +4,7 @@ public class Noleggio {
 
     private Utente utente;
     private Veicolo veicolo;
+    private Database database;
     private Date dataInizio;
     private Date dataFine;
 
@@ -15,24 +16,30 @@ public class Noleggio {
     }
 
     // metodi
-    public void registraUtente(){
-
-
-    }
-
-    public void loginUtente(){
+    public void registraUtente() {
+        database.getUtenti(this.utente);
 
     }
 
-    public void veicoliDisponibili(){
+    public void loginUtente() {
 
     }
 
-    public void affittoVeicolo(){
+    public boolean veicoliDisponibili() {
+        boolean veicoloDisponibile;
+        if (this.veicolo.affittato != false) veicoloDisponibile = false;
+
+        if (this.veicolo instanceof VeicoloBenzina) {
+
+        }
+        return false;
+    }
+
+    public void affittoVeicolo() {
 
     }
 
-    public void fineNoleggio(){
+    public void fineNoleggio() {
 
     }
 

@@ -13,59 +13,48 @@ public class Database {
     public Database() {
     }
 
-    public List<Utente> getUtenti() {
-        return utenti;
+    public void registrazioneUtente(Utente utente) {
+        utenti.add(utente);
     }
 
-    public void setUtenti(List<Utente> utenti) {
-        this.utenti = utenti;
+    public void eliminaAuto(Automobile automobile) {
+        automobili.remove(automobile);
     }
 
-    public List<Automobile> getAutomobili() {
-        return automobili;
+    public void eliminaScooter(Scooter scooter) {
+        scooters.remove(scooter);
     }
 
-    public void setAutomobili(List<Automobile> automobili) {
-        this.automobili = automobili;
+    public void eliminaFurgoncino (Furgoncino furgoncino) {
+        furgoncini.remove(furgoncino);
     }
 
-    public List<Scooter> getScooters() {
-        return scooters;
+    public void eliminaMonopattino (MonopattinoElettrico monopattinoElettrico) {
+        monopattiniElettrici.remove(monopattinoElettrico);
     }
 
-    public void setScooters(List<Scooter> scooters) {
-        this.scooters = scooters;
+    public void eliminaBici (Bici bicicletta) {
+        biciclette.remove(bicicletta);
     }
 
-    public List<Furgoncino> getFurgoncini() {
-        return furgoncini;
+    public void inserisciAuto(Automobile automobile) {
+        automobili.add(automobile);
     }
 
-    public void setFurgoncini(List<Furgoncino> furgoncini) {
-        this.furgoncini = furgoncini;
+    public void inserisciScooter(Scooter scooter) {
+        scooters.add(scooter);
     }
 
-    public List<MonopattinoElettrico> getMonopattiniElettrici() {
-        return monopattiniElettrici;
+    public void inserisciFurgoncino (Furgoncino furgoncino) {
+        furgoncini.add(furgoncino);
     }
 
-    public void setMonopattiniElettrici(List<MonopattinoElettrico> monopattiniElettrici) {
-        this.monopattiniElettrici = monopattiniElettrici;
+    public void inserisciMonopattino (MonopattinoElettrico monopattinoElettrico) {
+        monopattiniElettrici.add(monopattinoElettrico);
     }
 
-    public List<Bici> getBiciclette() {
-        return biciclette;
+    public void inserisciBici (Bici bicicletta) {
+        biciclette.add(bicicletta);
     }
 
-    public void setBiciclette(List<Bici> biciclette) {
-        this.biciclette = biciclette;
-    }
-
-    public List<Noleggio> getNoleggi() {
-        return noleggi;
-    }
-
-    public void setNoleggi(List<Noleggio> noleggi) {
-        this.noleggi = noleggi;
-    }
 }
