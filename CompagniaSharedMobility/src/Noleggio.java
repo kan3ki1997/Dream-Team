@@ -17,7 +17,7 @@ public class Noleggio {
 
     // metodi
     public void registraUtente() {
-        database.getUtenti(this.utente);
+//        database.getUtenti(this.utente);
 
     }
 
@@ -33,11 +33,12 @@ public class Noleggio {
 
     public void affittoVeicolo() {
         this.veicolo.isAffittato(true);
-
+        setDataInizio(this.dataInizio);
     }
 
     public void fineNoleggio() {
         this.veicolo.isAffittato(false);
+        setDataFine(this.dataFine);
     }
 
     // getters and setters
