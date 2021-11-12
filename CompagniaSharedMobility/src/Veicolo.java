@@ -29,19 +29,27 @@ public abstract class Veicolo {
    }
 
    // setters
-
+      /*
+   @param id L'ID del veicolo
+    */
    public void setId(int id) {
       this.id = id;
    }
-
+   /*
+   @param posizioneGPS La posizione GPS del veicolo (latitudine, longitudine)
+    */
    public void setPosizioneGPS(double[] posizioneGPS) {
       this.posizioneGPS = posizioneGPS;
    }
-
+   /*
+   @param affittato Se il veicolo è affittato o meno
+    */
    public void setAffittato(boolean affittato) {
       this.affittato = affittato;
    }
-
+   /*
+   @param tariffa Tariffa al minuto
+    */
    public void setTariffa(double tariffa) {
       this.tariffa = tariffa;
    }
