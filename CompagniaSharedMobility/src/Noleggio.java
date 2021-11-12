@@ -22,6 +22,7 @@ public class Noleggio {
     }
 
     public void loginUtente() {
+        database.cercaUtente(utente);
 
     }
 
@@ -32,12 +33,14 @@ public class Noleggio {
     }
 
     public void affittoVeicolo() {
-        this.veicolo.isAffittato(true);
+        this.veicolo.setAffittato(true);
+        setDataInizio(dataInizio);
 
     }
 
     public void fineNoleggio() {
-        this.veicolo.isAffittato(false);
+        this.veicolo.setAffittato(false);
+        setDataFine(dataFine);
     }
 
     // getters and setters
