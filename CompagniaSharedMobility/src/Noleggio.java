@@ -16,13 +16,14 @@ public class Noleggio {
     }
 
     // metodi
-    public void registraUtente(utente) {
+    public void registraUtente() {
         database.registrazioneUtente(this.utente);
 
     }
 
     public void loginUtente() {
-
+        if (database.cercaUtente(utente) == false) System.out.println("utente non registrato");
+        else System.out.println("login effettuato con successo");
     }
 
     public boolean veicoliDisponibili() {
@@ -32,12 +33,14 @@ public class Noleggio {
     }
 
     public void affittoVeicolo() {
-        this.veicolo.isAffittato(true);
+        this.veicolo.setAffittato(true);
+        setDataInizio(dataInizio);
 
     }
 
     public void fineNoleggio() {
-        this.veicolo.isAffittato(false);
+        this.veicolo.setAffittato(false);
+        setDataFine(dataFine);
     }
 
     // getters and setters
