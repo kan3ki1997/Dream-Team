@@ -1,5 +1,7 @@
+import java.util.List;
+
 public class Furgoncino extends VeicoloBenzina{
-    public Furgoncino(int ID, double[] PosizioneGPS, boolean Affitato, double tariffa, float serbatoio) {
-        super(ID, PosizioneGPS, Affitato, tariffa, serbatoio);
+    public Furgoncino(int id, double[] posizioneGPS, boolean affittato, double tariffa, float serbatoio,String targa, List<Patente> patenteNecessaria) {
+        super(id,posizioneGPS,affittato,tariffa,serbatoio,targa,patenteNecessaria);
     }
 }
