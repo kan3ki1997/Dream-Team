@@ -11,4 +11,8 @@ public abstract class VeicoloBenzina extends VeicoloImmatricolato {
    public float getSerbatoio() {
       return serbatoio;
    }
+
+   public void setSerbatoio(float serbatoio) {
+      this.serbatoio = serbatoio;
+   }
 }
