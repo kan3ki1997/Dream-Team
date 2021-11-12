@@ -4,10 +4,10 @@ public abstract class Veicolo {
    boolean affittato;
    double tariffa;
 
+   // constructor
    public Veicolo(int id, double[] posizioneGPS, boolean affittato, double tariffa) {
       this.id = id;
       this.posizioneGPS = posizioneGPS;
-      this.affittato = affittato;
       this.tariffa = tariffa;
    }
 
