@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 
 public class Main {
+    double[] POSIZIONEINIZIALE = {0,0};
 
    public static void main(String[] args) {
       ArrayList<Automobile> automobili = new ArrayList<Automobile>();
@@ -9,6 +10,7 @@ public class Main {
       ArrayList<MonopattinoElettrico> monopattini = new ArrayList<MonopattinoElettrico>();
       ArrayList<Bici> bici = new ArrayList<Bici>();
       ArrayList<Utente> utenti = new ArrayList<Utente>();
+
    }
 
    /*
