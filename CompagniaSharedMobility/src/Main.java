@@ -1,15 +1,18 @@
 import java.util.ArrayList;
 
 public class Main {
-    double[] POSIZIONEINIZIALE = {0,0};
 
-   public static void main(String[] args) {
+    public static void main(String[] args) {
       ArrayList<Automobile> automobili = new ArrayList<Automobile>();
       ArrayList<Scooter> scooter = new ArrayList<Scooter>();
       ArrayList<Furgoncino> furgoncini = new ArrayList<Furgoncino>();
       ArrayList<MonopattinoElettrico> monopattini = new ArrayList<MonopattinoElettrico>();
       ArrayList<Bici> bici = new ArrayList<Bici>();
       ArrayList<Utente> utenti = new ArrayList<Utente>();
+      double[] PosizioneIniziale = {0,0};
+
+      Automobile ferrari = new Automobile (2, PosizioneIniziale, false, 25.0,
+              30,0, "AA000AA");
 
    }
 
