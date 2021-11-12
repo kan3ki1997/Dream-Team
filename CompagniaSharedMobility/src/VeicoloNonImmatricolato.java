@@ -1,3 +1,3 @@
-abstract class VeicoloNonImmatricolato extends Veicolo{
+abstract abstract class VeicoloNonImmatricolato extends Veicolo{
 
 }
