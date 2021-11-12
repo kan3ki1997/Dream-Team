@@ -7,7 +7,6 @@ public abstract class Veicolo {
    public Veicolo(int id, double[] posizioneGPS, boolean affittato, double tariffa) {
       this.id = id;
       this.posizioneGPS = posizioneGPS;
-      this.affittato = affittato;
       this.tariffa = tariffa;
    }
 
