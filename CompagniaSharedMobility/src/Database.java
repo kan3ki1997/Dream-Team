@@ -37,4 +37,24 @@ public class Database {
         biciclette.remove(bicicletta);
     }
 
+    public void inserisciAuto(Automobile automobile) {
+        automobili.add(automobile);
+    }
+
+    public void inserisciScooter(Scooter scooter) {
+        scooters.add(scooter);
+    }
+
+    public void inserisciFurgoncino (Furgoncino furgoncino) {
+        furgoncini.add(furgoncino);
+    }
+
+    public void inserisciMonopattino (MonopattinoElettrico monopattinoElettrico) {
+        monopattiniElettrici.add(monopattinoElettrico);
+    }
+
+    public void inserisciBici (Bici bicicletta) {
+        biciclette.add(bicicletta);
+    }
+
 }
