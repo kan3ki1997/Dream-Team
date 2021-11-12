@@ -7,6 +7,7 @@ public class Scooter extends VeicoloBenzina{
         super(id,posizioneGPS,affittato,tariffa,serbatoio,targa,patenteNecessaria);
         this.haCasco = haCasco;
         patenteNecessaria.add(Patente.A);
+        patenteNecessaria.add(Patente.B);
         this.tariffa=0.5;
     }
 
