@@ -6,8 +6,8 @@ public abstract class VeicoloImmatricolato extends Veicolo {
    private final List<Patente> patenteNecessaria = new ArrayList<Patente>();
 
    // constructor
-   public VeicoloImmatricolato(int id, double[] posizioneGPS, boolean affittato, double tariffa, String targa, List<Patente> patenteNecessaria) {
-      super(id, posizioneGPS, affittato, tariffa);
+   public VeicoloImmatricolato(int id, double[] posizioneGPS, String targa, List<Patente> patenteNecessaria) {
+      super(id, posizioneGPS, patenteNecessaria);
       this.targa = targa;
 
    }
