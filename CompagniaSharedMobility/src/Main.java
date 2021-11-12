@@ -8,7 +8,7 @@ public class Main {
         ArrayList<Furgoncino> furgoncini = new ArrayList<Furgoncino>();
         ArrayList<MonopattinoElettrico> monopattini = new ArrayList<MonopattinoElettrico>();
         ArrayList<Bici> bici = new ArrayList<Bici>();
-        ArrayList<Utente> utenti = new ArrayList<Utenti>();
+        ArrayList<Utente> utenti = new ArrayList<Utente>();
     }
 
     public void addMonopattino(ArrayList monopattini){
