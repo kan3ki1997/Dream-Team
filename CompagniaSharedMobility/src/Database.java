@@ -13,6 +13,10 @@ public class Database {
     public Database() {
     }
 
+    public void registrazioneUtente(Utente utente) {
+        utenti.add(utente);
+    }
+
     public List<Utente> getUtenti() {
         return utenti;
     }
