@@ -26,21 +26,18 @@ public class Noleggio {
     }
 
     public boolean veicoliDisponibili() {
-        boolean veicoloDisponibile;
-        if (this.veicolo.affittato != false) veicoloDisponibile = false;
-
-        if (this.veicolo instanceof VeicoloBenzina) {
-
-        }
-        return false;
+        if (this.veicolo instanceof VeicoloBenzina && ((VeicoloBenzina) this.veicolo).getSerbatoio() < 10) return false;
+        else if (this.veicolo.affittato != false) return false;
+        else return true;
     }
 
     public void affittoVeicolo() {
+        this.veicolo.isAffittato(true);
 
     }
 
     public void fineNoleggio() {
-
+        this.veicolo.isAffittato(false);
     }
 
     // getters and setters
