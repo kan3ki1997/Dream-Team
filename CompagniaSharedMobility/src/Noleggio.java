@@ -16,14 +16,14 @@ public class Noleggio {
     }
 
     // metodi
-    public void registraUtente(utente) {
+    public void registraUtente() {
         database.registrazioneUtente(this.utente);
 
     }
 
     public void loginUtente() {
-        database.cercaUtente(utente);
-
+        if (database.cercaUtente(utente) == false) System.out.println("utente non registrato");
+        else System.out.println("login effettuato con successo");
     }
 
     public boolean veicoliDisponibili() {
