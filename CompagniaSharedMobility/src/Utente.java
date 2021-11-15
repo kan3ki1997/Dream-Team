@@ -21,7 +21,10 @@ public class Utente {
       this.credito = 0.0f;
       this.casco = false;
       this.patenti = patenti;
-      database.registrazioneUtente(this);
+   }
+
+   public void registraUtente(Utente utente) {
+      database.registrazioneUtente(utente);
    }
 
    public String getNome() {
