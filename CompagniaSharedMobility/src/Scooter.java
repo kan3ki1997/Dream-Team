@@ -1,14 +1,12 @@
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 public class Scooter extends VeicoloBenzina{
     private boolean haCasco;
     Database database;
 
-    public Scooter(int id, double[] posizioneGPS, float serbatoio, boolean haCasco, String targa) {
-        super(id,posizioneGPS,targa,serbatoio,0.05,new ArrayList<Patente>( Arrays.asList(Patente.A, Patente.B)));
-        this.haCasco = haCasco;
+    public Scooter(int id, String targa) {
+        super(id,new double [] {0,0},targa,100,0.05,new HashSet <> (Arrays.asList(Patente.A,Patente.B)));
+        this.haCasco = true;
     }
 
     public void registraScooter(Scooter scooter) {

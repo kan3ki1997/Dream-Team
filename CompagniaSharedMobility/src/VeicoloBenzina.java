@@ -1,9 +1,10 @@
 import java.util.List;
+import java.util.Set;
 
 public abstract class VeicoloBenzina extends VeicoloImmatricolato {
    private float serbatoio;
 
-   public VeicoloBenzina(int id, double[] posizioneGPS, String targa, float serbatoio,double tariffa,List<Patente> patenteNecessaria) {
+   public VeicoloBenzina(int id, double[] posizioneGPS, String targa, float serbatoio, double tariffa, Set <Patente> patenteNecessaria) {
       super(id, posizioneGPS, targa,tariffa,patenteNecessaria);
       this.serbatoio = serbatoio;
    }
