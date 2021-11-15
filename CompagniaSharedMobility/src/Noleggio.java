@@ -41,7 +41,7 @@ public class Noleggio {
 
    public boolean veicoliDisponibili() {
       if (this.veicolo instanceof VeicoloBenzina && ((VeicoloBenzina) this.veicolo).getSerbatoio() < 10) return false; // serbatoio non sufficente
-      else if (this.veicolo.affittato == true) return false; // il veicolo è affittato
+      else if (this.veicolo.isAffittato() == true) return false; // il veicolo è affittato
       else return true;
    }
 

@@ -18,16 +18,11 @@ public abstract class Veicolo {
    }
 
    public Veicolo(){
-
    }
 
    // getters
    public int getId() {
       return id;
-   }
-
-   public double[] getPosizioneGPS() {
-      return posizioneGPS;
    }
 
    public boolean isAffittato() {
@@ -36,6 +31,10 @@ public abstract class Veicolo {
 
    public double getTariffa() {
       return tariffa;
+   }
+
+   public double[] getPosizioneGPS() {
+      return posizioneGPS;
    }
 
    // setters
