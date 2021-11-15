@@ -55,7 +55,7 @@ public class Utente {
       utente.patenti.add(patente);
    }
 
-   public Patente[] getPatenti() {
+   public Set<Patente> getPatenti() {
       return patenti;
    }
 
