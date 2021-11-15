@@ -6,7 +6,7 @@ import java.util.Set;
 public class Database {
    private HashMap<String, int> utenti;
    private HashMap<String, int> automobili;
-   private HashMap<String, int> scooters =;
+   private HashMap<String, int> scooters;
    private HashMap<String, int> furgoncini;
    private HashMap<String, int> monopattiniElettrici;
    private HashMap<String, int> biciclette;
