@@ -1,16 +1,14 @@
-import java.util.ArrayList;
-import java.util.List;
 import java.util.HashMap;
 import java.util.Set;
 
 public class Database {
-   private HashMap<String, int> utenti;
-   private Set<int> automobili;
-   private Set<int> scooters;
-   private Set<int> furgoncini;
-   private Set<int> monopattiniElettrici;
-   private Set<int> biciclette;
-   private Set<int> noleggi;
+   private HashMap<String, Integer> utenti;
+   private Set<Integer> automobili;
+   private Set<Integer> scooters;
+   private Set<Integer> furgoncini;
+   private Set<Integer> monopattiniElettrici;
+   private Set<Integer> biciclette;
+   private Set<Integer> noleggi;
 
    public Database() {
    }
