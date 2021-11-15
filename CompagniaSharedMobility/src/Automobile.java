@@ -11,4 +11,8 @@ public class Automobile extends VeicoloBenzina {
       patenteNecessaria.add(Patente.B);
    }
 
+   private addPatenti() {
+      patenteNecessaria.add(Patente.B);
+   }
+
 }
