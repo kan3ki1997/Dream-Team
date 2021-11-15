@@ -12,6 +12,15 @@ public abstract class Veicolo {
       this.affittato = false;
    }
 
+   public Veicolo(double[] posizioneGPS) {
+      this.posizioneGPS = posizioneGPS;
+      this.tariffa = tariffa;
+   }
+
+   public Veicolo(){
+
+   }
+
    // getters
    public int getId() {
       return id;
