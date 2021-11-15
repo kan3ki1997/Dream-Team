@@ -1,6 +1,4 @@
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 public class Furgoncino extends VeicoloBenzina {
 
@@ -8,8 +6,8 @@ public class Furgoncino extends VeicoloBenzina {
    Database database;
 
 
-   public Furgoncino(int id, double[] posizioneGPS, float serbatoio, String targa) {
-      super(id, posizioneGPS, targa, serbatoio, 0.12, new ArrayList<Patente>( Arrays.asList(Patente.A, Patente.B)));
+   public Furgoncino(int id, String targa) {
+      super(id,new double [] {0,0},targa,100,0.05,new HashSet <> (Arrays.asList(Patente.B)));
    }
 
    public void registraFurgoncino(Furgoncino furgoncino) {
