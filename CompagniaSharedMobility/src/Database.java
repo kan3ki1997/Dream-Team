@@ -97,23 +97,23 @@ public class Database {
    }
 
    public void inserisciAuto(Automobile automobile) {
-      automobili.add(automobile);
+      automobili.add(automobile.getId());
    }
 
    public void inserisciScooter(Scooter scooter) {
-      scooters.add(scooter);
+      scooters.add(scooter.getId());
    }
 
    public void inserisciFurgoncino(Furgoncino furgoncino) {
-      furgoncini.add(furgoncino);
+      furgoncini.add(furgoncino.getId());
    }
 
    public void inserisciMonopattino(MonopattinoElettrico monopattinoElettrico) {
-      monopattiniElettrici.add(monopattinoElettrico);
+      monopattiniElettrici.add(monopattinoElettrico.getId());
    }
 
    public void inserisciBici(Bici bicicletta) {
-      biciclette.add(bicicletta);
+      biciclette.add(bicicletta.getId());
    }
 
 }

@@ -10,7 +10,9 @@ public class Furgoncino extends VeicoloBenzina {
 
    public Furgoncino(int id, double[] posizioneGPS, float serbatoio, String targa) {
       super(id, posizioneGPS, targa, serbatoio, 0.12, new ArrayList<Patente>( Arrays.asList(Patente.A, Patente.B)));
+   }
 
-      database.registrazioneFurgoncino(this);
+   public void registraFurgoncino(Furgoncino furgoncino) {
+      database.registrazioneFurgoncino(furgoncino);
    }
 }
