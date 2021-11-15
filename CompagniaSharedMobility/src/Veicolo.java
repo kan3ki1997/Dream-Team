@@ -18,7 +18,6 @@ public abstract class Veicolo {
    }
 
    public Veicolo(){
-
    }
 
    // getters
@@ -36,10 +35,6 @@ public abstract class Veicolo {
 
    public double[] getPosizioneGPS() {
       return posizioneGPS;
-   }
-
-   public double getTariffa() {
-      return tariffa;
    }
 
    // setters
