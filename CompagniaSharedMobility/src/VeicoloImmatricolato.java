@@ -11,9 +11,5 @@ public abstract class VeicoloImmatricolato extends Veicolo {
       this.patenteNecessaria = patenteNecessaria;
    }
 
-   public VeicoloImmatricolato() {
-      super();
-      this.targa = targa;
-      this.patenteNecessaria = patenteNecessaria;
-   }
+
 }
