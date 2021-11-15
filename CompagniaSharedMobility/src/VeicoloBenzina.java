@@ -16,6 +16,7 @@ public abstract class VeicoloBenzina extends VeicoloImmatricolato {
    @param serbatoio Quanto è pieno il serbatoio, in percentuale
     */
    public void setSerbatoio(float serbatoio) {
+      if (serbatoio >= 0 && serbatoio <= 100)     //Forzo i valori entro un certo range (0-100%)
       this.serbatoio = serbatoio;
    }
 }
