@@ -7,18 +7,30 @@ public class Noleggio {
    private Database database;
    private Date dataInizio;
    private Date dataFine;
+   private int id;
+   Database database;
 
-   public Noleggio(Utente utente, Veicolo veicolo, Date dataInizio, Date dataFine) {
+   public Noleggio(Utente utente, Veicolo veicolo, Date dataInizio, Date dataFine, int id) {
       this.utente = utente;
       this.veicolo = veicolo;
       this.dataInizio = dataInizio;
       this.dataFine = dataFine;
+      this.id = id;
+      database.registrazioneNoleggio(this);
    }
 
    // metodi
    public void registraUtente() {
       database.registrazioneUtente(this.utente);
 
+   }
+
+   public int getId() {
+      return id;
+   }
+
+   public void setId(int id) {
+      this.id = id;
    }
 
    public void loginUtente() {
