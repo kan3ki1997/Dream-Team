@@ -48,8 +48,8 @@ public class Utente {
       return id;
    }
 
-   public void setPatenti(Patente[] patenti) {
-      this.patenti = patenti;
+   public void addPatente(Utente utente, Patente patente) {
+      utente.patenti.add(patente);
    }
 
    public Patente[] getPatenti() {
