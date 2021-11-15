@@ -1,12 +1,11 @@
-import java.util.ArrayList;
-import java.util.List;
+import java.util.Set;
 
 public class Scooter extends VeicoloBenzina{
     private boolean haCasco;
-    private final List<Patente> patenteNecessaria = new ArrayList<Patente>();
+    private final Set<Patente> patenteNecessaria;
     Database database;
 
-    public Scooter(int id, double[] posizioneGPS, boolean affittato, double tariffa, float serbatoio, boolean haCasco, String targa, List<Patente> patenteNecessaria) {
+    public Scooter(int id, double[] posizioneGPS, boolean affittato, double tariffa, float serbatoio, boolean haCasco, String targa, Set<Patente> patenteNecessaria) {
         super(id,posizioneGPS,targa,serbatoio,tariffa,patenteNecessaria);
         patenteNecessaria.add(Patente.A);
         patenteNecessaria.add(Patente.B);

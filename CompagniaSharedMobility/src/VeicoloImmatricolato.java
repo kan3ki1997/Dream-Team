@@ -1,14 +1,14 @@
 import java.util.ArrayList;
-import java.util.List;
+import java.util.Set;
 
 public abstract class VeicoloImmatricolato extends Veicolo {
    private String targa;
-   private List<Patente> patenteNecessaria ;
+   private Set<Patente> patenteNecessaria ;
 
-   public VeicoloImmatricolato(int id, double[] posizioneGPS, String targa,double tariffa,List<Patente> patenteNecessaria) {
+   public VeicoloImmatricolato(int id, double[] posizioneGPS, String targa,double tariffa, Set<Patente> patenteNecessaria) {
       super(id, posizioneGPS,tariffa);
       this.targa = targa;
-      this.patenteNecessaria=patenteNecessaria;
+      this.patenteNecessaria = patenteNecessaria;
    }
 
    public VeicoloImmatricolato() {

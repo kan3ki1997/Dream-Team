@@ -1,8 +1,8 @@
 import java.util.ArrayList;
-import java.util.List;
+import java.util.Set;
 
 public class Automobile extends VeicoloBenzina {
-   private final List<Patente> patenteNecessaria = new ArrayList<Patente>();
+   private final Set<Patente> patenteNecessaria;
    Database database;
 
    // constructor
@@ -13,8 +13,6 @@ public class Automobile extends VeicoloBenzina {
       database.registrazioneAutomobile(this);
    }
 
-   private addPatenti() {
-      patenteNecessaria.add(Patente.B);
-   }
+
 
 }
