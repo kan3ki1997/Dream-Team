@@ -42,10 +42,8 @@ public class Database {
    }
 
    public boolean cercaUtente(Utente utente) {
-      int index = utenti.indexOf(utente);
-      if (index == -1)
-         return false;
-      return true;
+      boolean Search = utenti.containsKey(utente.getId());
+      return Search;
    }
 
    public void eliminaAuto(Automobile automobile) {
