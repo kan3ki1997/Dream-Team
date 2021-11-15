@@ -53,7 +53,7 @@ public class Main {
         else
             haCasco = false;
 
-        scooter.add(new Automobile(id, targa, haCasco));
+        scooter.add(new Scooter(id, targa, haCasco));
     }
 
     public void addFurgoncino(ArrayList furgoncino) {
