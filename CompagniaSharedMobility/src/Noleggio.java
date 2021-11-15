@@ -8,7 +8,6 @@ public class Noleggio {
    private Date dataInizio;
    private Date dataFine;
    private int id;
-   Database database;
 
    public Noleggio(Utente utente, Veicolo veicolo, Date dataInizio, Date dataFine, int id) {
       this.utente = utente;
@@ -16,13 +15,15 @@ public class Noleggio {
       this.dataInizio = dataInizio;
       this.dataFine = dataFine;
       this.id = id;
-      database.registrazioneNoleggio(this);
    }
 
    // metodi
    public void registraUtente() {
       database.registrazioneUtente(this.utente);
+   }
 
+   public void registraNoleggio(Noleggio noleggio) {
+      database.registrazioneNoleggio(noleggio);
    }
 
    public int getId() {
