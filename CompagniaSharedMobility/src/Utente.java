@@ -39,7 +39,7 @@ public class Utente {
       return codiceFiscale;
    }
 
-   public void setId(String id) {
+   public void setId(int id) {
       this.id = id;
    }
 
