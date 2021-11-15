@@ -24,6 +24,6 @@ public class Main {
       int indice = monopattini.size();
       int id = monopattini.size() + 1;
       double[] posizioneGPS = {0, 0};
-       monopattini.add(new MonopattinoElettrico());
+       monopattini.add(new MonopattinoElettrico(id, posizioneGPS));
    }
 }
