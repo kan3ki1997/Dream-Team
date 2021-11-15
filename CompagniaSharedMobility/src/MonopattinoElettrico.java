@@ -3,7 +3,7 @@ import java.util.List;
 public class MonopattinoElettrico extends VeicoloElettrico{
     Database database;
 
-    public MonopattinoElettrico() {
+    public MonopattinoElettrico(int id, double[] posizioneGPS) {
         //this.id = boh;
         //this.posizioneGPS = PosizioneGPS;
 
