@@ -1,5 +1,5 @@
 import java.util.Date;
-import java.util.HashMap;
+import java.util.Set;
 
 public class Utente {
    private int id;
@@ -8,18 +8,19 @@ public class Utente {
    private final Date dataNascita;
    private final String codiceFiscale;
    private float credito;
-   Patente[] patenti;
+   Set<Patente> patenti;
    boolean casco;
    Database database;
 
 
-   public Utente(String nome, String cognome, Date dataNascita, String codiceFiscale) {
+   public Utente(String nome, String cognome, Date dataNascita, String codiceFiscale, Set<Patente> patenti) {
       this.nome = nome;
       this.cognome = cognome;
       this.dataNascita = dataNascita;
       this.codiceFiscale = codiceFiscale;
       this.credito = 0.0f;
       this.casco = false;
+      this.patenti = patenti;
       database.registrazioneUtente(this);
    }
 
