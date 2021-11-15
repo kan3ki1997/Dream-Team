@@ -5,19 +5,26 @@ import java.util.Set;
 
 public class Database {
    private HashMap<String, int> utenti;
-   private HashMap<String, int> automobili;
-   private HashMap<String, int> scooters;
+   private Set<int> automobili;
+   private Set<int> scooters;
    private HashMap<String, int> furgoncini;
    private HashMap<String, int> monopattiniElettrici;
    private HashMap<String, int> biciclette;
    private Set<int> noleggi;
 
    public Database() {
-
    }
 
    public void registrazioneUtente(Utente utente) {
       utenti.put(utente.getCognome(), utente.getId());
+   }
+
+   public void registrazioneAutomobile(Automobile automobile) {
+      automobili.add(automobile.getId());
+   }
+
+   public void registrazioneScooter(Scooter scooter) {
+      scooters.add(scooter.getId());
    }
 
    public boolean cercaUtente(Utente utente) {

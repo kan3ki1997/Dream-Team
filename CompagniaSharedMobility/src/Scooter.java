@@ -4,11 +4,13 @@ import java.util.List;
 public class Scooter extends VeicoloBenzina{
     private boolean haCasco;
     private final List<Patente> patenteNecessaria = new ArrayList<Patente>();
+    Database database;
 
     public Scooter(int id, double[] posizioneGPS, boolean affittato, double tariffa, float serbatoio, boolean haCasco, String targa, List<Patente> patenteNecessaria) {
         super(id,posizioneGPS,affittato,tariffa,serbatoio,targa,patenteNecessaria);
         this.haCasco = haCasco;
         patenteNecessaria.add(Patente.A);
+        database.registrazioneScooter(this);
     }
 
     public boolean isHaCasco() {
