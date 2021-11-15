@@ -1,4 +1,5 @@
 import java.util.Date;
+import java.util.HashMap;
 
 public class Utente {
    private String id;
@@ -9,6 +10,7 @@ public class Utente {
    private float credito;
    Patente[] patenti;
    boolean casco;
+   Database database;
 
 
    public Utente(String nome, String cognome, Date dataNascita, String codiceFiscale) {
@@ -18,6 +20,7 @@ public class Utente {
       this.codiceFiscale = codiceFiscale;
       this.credito = 0.0f;
       this.casco = false;
+      database.registrazioneUtente(this);
    }
 
    public String getNome() {

@@ -17,7 +17,7 @@ public class Database {
    }
 
    public void registrazioneUtente(Utente utente) {
-      utenti.add(utente);
+      utenti.put(utente.getCognome(), utente.getId());
    }
 
    public boolean cercaUtente(Utente utente) {
