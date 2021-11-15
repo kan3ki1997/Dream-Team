@@ -9,6 +9,7 @@ public abstract class Veicolo {
       this.id = id;
       this.posizioneGPS = posizioneGPS;
       this.tariffa = tariffa;
+      this.affittato = false;
    }
 
    // getters

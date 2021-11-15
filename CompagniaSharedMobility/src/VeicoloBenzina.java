@@ -3,9 +3,8 @@ import java.util.List;
 public abstract class VeicoloBenzina extends VeicoloImmatricolato {
    private float serbatoio;
 
-   // constructor
-   public VeicoloBenzina(int id, double[] posizioneGPS, boolean affittato, double tariffa, float serbatoio, String targa, List<Patente> patenteNecessaria) {
-      super(id, posizioneGPS, affittato, tariffa, targa, patenteNecessaria);
+   public VeicoloBenzina(int id, double[] posizioneGPS, String targa, float serbatoio) {
+      super(id, posizioneGPS, targa);
       this.serbatoio = serbatoio;
    }
 
@@ -17,6 +16,7 @@ public abstract class VeicoloBenzina extends VeicoloImmatricolato {
    @param serbatoio Quanto è pieno il serbatoio, in percentuale
     */
    public void setSerbatoio(float serbatoio) {
+      if (serbatoio >= 0 && serbatoio <= 100)     //Forzo i valori entro un certo range (0-100%)
       this.serbatoio = serbatoio;
    }
 }

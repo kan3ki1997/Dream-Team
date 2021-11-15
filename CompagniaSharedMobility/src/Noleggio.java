@@ -22,13 +22,13 @@ public class Noleggio {
    }
 
    public void loginUtente() {
-      if (database.cercaUtente(utente) == false) System.out.println("utente non registrato");
+      if (!database.cercaUtente(utente)) System.out.println("utente non registrato");
       else System.out.println("login effettuato con successo");
    }
 
    public boolean veicoliDisponibili() {
-      if (this.veicolo instanceof VeicoloBenzina && ((VeicoloBenzina) this.veicolo).getSerbatoio() < 10) return false;
-      else if (this.veicolo.affittato != false) return false;
+      if (this.veicolo instanceof VeicoloBenzina && ((VeicoloBenzina) this.veicolo).getSerbatoio() < 10) return false; // serbatoio non sufficente
+      else if (this.veicolo.affittato == true) return false; // il veicolo è affittato
       else return true;
    }
 

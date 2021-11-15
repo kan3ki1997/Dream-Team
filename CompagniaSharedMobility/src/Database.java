@@ -1,16 +1,19 @@
 import java.util.ArrayList;
 import java.util.List;
+import java.util.HashMap;
+import java.util.Set;
 
 public class Database {
-   private final List<Utente> utenti = new ArrayList<Utente>();
-   private final List<Automobile> automobili = new ArrayList<Automobile>();
-   private final List<Scooter> scooters = new ArrayList<Scooter>();
-   private final List<Furgoncino> furgoncini = new ArrayList<Furgoncino>();
-   private final List<MonopattinoElettrico> monopattiniElettrici = new ArrayList<MonopattinoElettrico>();
-   private final List<Bici> biciclette = new ArrayList<Bici>();
-   private final List<Noleggio> noleggi = new ArrayList<Noleggio>();
+   private HashMap<String, int> utenti;
+   private HashMap<String, int> automobili;
+   private HashMap<String, int> scooters =;
+   private HashMap<String, int> furgoncini;
+   private HashMap<String, int> monopattiniElettrici;
+   private HashMap<String, int> biciclette;
+   private Set<int> noleggi;
 
    public Database() {
+
    }
 
    public void registrazioneUtente(Utente utente) {
