@@ -2,7 +2,7 @@ import java.util.Date;
 import java.util.HashMap;
 
 public class Utente {
-   private String id;
+   private int id;
    private final String nome;
    private final String cognome;
    private final Date dataNascita;
@@ -43,7 +43,7 @@ public class Utente {
       this.id = id;
    }
 
-   public String getId() {
+   public int getId() {
       return id;
    }
 
