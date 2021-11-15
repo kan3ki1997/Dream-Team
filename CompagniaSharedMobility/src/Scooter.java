@@ -9,8 +9,10 @@ public class Scooter extends VeicoloBenzina{
     public Scooter(int id, double[] posizioneGPS, float serbatoio, boolean haCasco, String targa) {
         super(id,posizioneGPS,targa,serbatoio,0.05,new ArrayList<Patente>( Arrays.asList(Patente.A, Patente.B)));
         this.haCasco = haCasco;
-        database.registrazioneScooter(this);
+    }
 
+    public void registraScooter(Scooter scooter) {
+        database.registrazioneScooter(scooter);
     }
 
     public void setHaCasco(boolean haCasco) {
