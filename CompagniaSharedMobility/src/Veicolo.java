@@ -5,7 +5,7 @@ public abstract class Veicolo {
    double tariffa;
 
    // constructor
-   public Veicolo(int id, double[] posizioneGPS) {
+   public Veicolo(int id, double[] posizioneGPS,double tariffa) {
       this.id = id;
       this.posizioneGPS = posizioneGPS;
       this.tariffa = tariffa;

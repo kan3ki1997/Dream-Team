@@ -6,10 +6,12 @@ public class Scooter extends VeicoloBenzina{
     private final List<Patente> patenteNecessaria = new ArrayList<Patente>();
 
     public Scooter(int id, double[] posizioneGPS, boolean affittato, double tariffa, float serbatoio, boolean haCasco, String targa, List<Patente> patenteNecessaria) {
-        super(id,posizioneGPS,affittato,tariffa,serbatoio,targa,patenteNecessaria);
-        this.haCasco = haCasco;
+        super(id,posizioneGPS,targa,serbatoio,tariffa,patenteNecessaria);
         patenteNecessaria.add(Patente.A);
         patenteNecessaria.add(Patente.B);
+
+        this.haCasco = haCasco;
+
         this.tariffa=0.5;
     }
 
@@ -17,8 +19,5 @@ public class Scooter extends VeicoloBenzina{
         return haCasco;
     }
 
-    private addPatenti() {
-        patenteNecessaria.add(Patente.A);
-        patenteNecessaria.add(Patente.B);
-    }
+
 }
