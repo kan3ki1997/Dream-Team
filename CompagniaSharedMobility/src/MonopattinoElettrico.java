@@ -8,8 +8,10 @@ public class MonopattinoElettrico extends VeicoloElettrico{
         super(); //batteria
         this.tariffa = 0.15;
         this.posizioneGPS = new double[]{0, 0};
+    }
 
-        database.registrazioneMonopattino(this);
+    public void registraMonopattino(MonopattinoElettrico monopattinoElettrico) {
+        database.registrazioneMonopattino(monopattinoElettrico);
     }
 
 
