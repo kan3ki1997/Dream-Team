@@ -38,10 +38,6 @@ public abstract class Veicolo {
       return posizioneGPS;
    }
 
-   public boolean isAffittato() {
-      return affittato;
-   }
-
    public double getTariffa() {
       return tariffa;
    }
