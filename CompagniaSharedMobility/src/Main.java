@@ -20,7 +20,6 @@ public class Main {
 
    public void addAutomobile(ArrayList automobili){
        Scanner sc = new Scanner(System.in);
-       int indice = automobili.size();
        int id = automobili.size() + 1;
        System.out.print("Targa: ");
        String targa = sc.nextLine();
@@ -29,7 +28,6 @@ public class Main {
 
     public void addScooter(ArrayList scooter){
         Scanner sc = new Scanner(System.in);
-        int indice = scooter.size();
         int id = scooter.size() + 1;
         System.out.print("Targa: ");
         String targa = sc.nextLine();
@@ -58,7 +56,6 @@ public class Main {
 
     public void addFurgoncino(ArrayList furgoncino) {
         Scanner sc = new Scanner(System.in);
-        int indice = furgoncino.size();
         int id = furgoncino.size() + 1;
         System.out.print("Targa: ");
         String targa = sc.nextLine();
@@ -66,13 +63,11 @@ public class Main {
     }
 
     public void addMonopattino(ArrayList monopattini) {
-        int indice = monopattini.size();
         int id = monopattini.size() + 1;
         monopattini.add(new MonopattinoElettrico(id));
     }
 
     public void addBici(ArrayList bici) {
-        int indice = bici.size();
         int id = bici.size() + 1;
         bici.add(new MonopattinoElettrico(id));
     }
