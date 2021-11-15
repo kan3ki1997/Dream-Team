@@ -18,8 +18,8 @@ public class Noleggio {
    }
 
    // metodi
-   public void registraUtente() {
-      database.registrazioneUtente(this.utente);
+   public void registraUtente(Utente utente) {
+      database.registrazioneUtente(utente);
    }
 
    public void registraNoleggio(Noleggio noleggio) {
