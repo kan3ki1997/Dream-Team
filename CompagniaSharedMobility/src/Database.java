@@ -46,6 +46,36 @@ public class Database {
       return Search;
    }
 
+   public boolean cercaAutomobile(Automobile automobile) {
+      boolean Search = automobili.contains(automobile);
+      return Search;
+   }
+
+   public boolean cercaBici(Bici bici) {
+      boolean Search = biciclette.contains(bici);
+      return Search;
+   }
+
+   public boolean cercaFurgoncino(Furgoncino furgoncino) {
+      boolean Search = furgoncini.contains(furgoncino);
+      return Search;
+   }
+
+   public boolean cercaMonopattino(MonopattinoElettrico monopattinoElettrico) {
+      boolean Search = monopattiniElettrici.contains(monopattinoElettrico);
+      return Search;
+   }
+
+   public boolean cercaScooter(Scooter scooter) {
+      boolean Search = scooters.contains(scooter);
+      return Search;
+   }
+
+   public boolean cercaNoleggio(Noleggio noleggio) {
+      boolean Search = noleggi.contains(noleggio);
+      return Search;
+   }
+
    public void eliminaAuto(Automobile automobile) {
       automobili.remove(automobile);
    }
