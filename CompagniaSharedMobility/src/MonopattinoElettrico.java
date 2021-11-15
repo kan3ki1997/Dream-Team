@@ -6,7 +6,7 @@ public class MonopattinoElettrico extends VeicoloElettrico{
 
     public MonopattinoElettrico(int id) {
         super(); //batteria
-        this.tariffa = 0.15;
+        super.setTariffa(0.15);
         this.posizioneGPS = new double[]{0, 0};
     }
 

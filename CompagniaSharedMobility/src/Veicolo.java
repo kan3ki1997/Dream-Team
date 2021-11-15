@@ -26,6 +26,14 @@ public abstract class Veicolo {
       return id;
    }
 
+   public boolean isAffittato() {
+      return affittato;
+   }
+
+   public double getTariffa() {
+      return tariffa;
+   }
+
    public double[] getPosizioneGPS() {
       return posizioneGPS;
    }
