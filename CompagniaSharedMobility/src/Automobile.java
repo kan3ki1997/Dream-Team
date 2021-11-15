@@ -10,9 +10,10 @@ public class Automobile extends VeicoloBenzina {
                      float serbatoio, String targa) {
       super(id, posizioneGPS, affittato, tariffa, serbatoio, targa, patenteNecessaria);
       patenteNecessaria.add(Patente.B);
-      database.registrazioneAutomobile(this);
    }
 
-
+   public void registraAutomobile(Automobile automobile) {
+      database.registrazioneAutomobile(automobile);
+   }
 
 }
