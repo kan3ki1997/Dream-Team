@@ -1,16 +1,18 @@
 import javax.swing.*;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.Scanner;
+import java.util.Set;
 
 public class Main {
 
     public static void main(String[] args) {
-      ArrayList<Automobile> automobili = new ArrayList<Automobile>();
-      ArrayList<Scooter> scooter = new ArrayList<Scooter>();
-      ArrayList<Furgoncino> furgoncini = new ArrayList<Furgoncino>();
-      ArrayList<MonopattinoElettrico> monopattini = new ArrayList<MonopattinoElettrico>();
-      ArrayList<Bici> bici = new ArrayList<Bici>();
-      ArrayList<Utente> utenti = new ArrayList<Utente>();
+      HashSet<Automobile> automobili = new HashSet<Automobile>();
+      HashSet<Scooter> scooter = new HashSet<Scooter>();
+      HashSet<Furgoncino> furgoncini = new HashSet<Furgoncino>();
+      HashSet<MonopattinoElettrico> monopattini = new HashSet<MonopattinoElettrico>();
+      HashSet<Bici> bici = new HashSet<Bici>();
+      HashSet<Utente> utenti = new HashSet<Utente>();
       Database database = new Database();
 
       /*Automobile ferrari = new Automobile (2, PosizioneIniziale, false, 25.0, 30.0f, "AA000AA");
