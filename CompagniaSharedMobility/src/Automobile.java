@@ -6,7 +6,7 @@ public class Automobile extends VeicoloBenzina {
    Database database;
 
    // constructor
-   public Automobile(int id, double[] posizioneGPS, String targa, float serbatoio, double tariffa, List<Patente> patenteNecessaria) {
+   public Automobile(int id, double[] posizioneGPS, String targa, float serbatoio, double tariffa, Set<Patente> patenteNecessaria) {
       super(id, posizioneGPS, targa, serbatoio, tariffa, patenteNecessaria);
       patenteNecessaria.add(Patente.B);
    }
