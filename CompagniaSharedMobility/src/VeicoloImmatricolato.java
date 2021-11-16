@@ -11,5 +11,8 @@ public abstract class VeicoloImmatricolato extends Veicolo {
       this.patenteNecessaria = patenteNecessaria;
    }
 
+   public VeicoloImmatricolato(int id, double[] posizioneGPS ,double tariffa) {
+      super(id, posizioneGPS,tariffa);
+   }
 
 }
