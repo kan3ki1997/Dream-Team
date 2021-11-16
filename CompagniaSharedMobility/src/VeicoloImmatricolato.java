@@ -11,5 +11,7 @@ public abstract class VeicoloImmatricolato extends Veicolo {
       this.patenteNecessaria = patenteNecessaria;
    }
 
-
+   public Set<Patente> getPatenteNecessaria() {
+      return patenteNecessaria;
+   }
 }
