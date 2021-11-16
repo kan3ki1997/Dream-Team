@@ -6,7 +6,7 @@ public class MonopattinoElettrico extends VeicoloElettrico{
     private Database database;
 
     public MonopattinoElettrico(int id, double[] posizioneGPS) {
-        super(id, posizioneGPS, 0.15, 100);
+        super(id, posizioneGPS, 0.15);
     }
 
     public void registraMonopattino(MonopattinoElettrico monopattinoElettrico) {
