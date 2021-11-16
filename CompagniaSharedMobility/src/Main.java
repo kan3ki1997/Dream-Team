@@ -8,7 +8,7 @@ public class Main {
 
     public static void main(String[] args) {
       HashSet<Automobile> automobili = new HashSet<Automobile>();
-      HashSet<Scooter> scooters = new HashSet<Scooter>();
+      HashSet<Scooter> scooter = new HashSet<Scooter>();
       HashSet<Furgoncino> furgoncini = new HashSet<Furgoncino>();
       HashSet<MonopattinoElettrico> monopattini = new HashSet<MonopattinoElettrico>();
       HashSet<Bici> bici = new HashSet<Bici>();
@@ -28,7 +28,7 @@ public class Main {
        automobili.add(new Automobile(id, targa));
    }
 
-    public void addScooter(HashSet scooters){
+    public void addScooter(HashSet scooter){
         Scanner sc = new Scanner(System.in);
         int id = scooters.size() + 1;
         System.out.print("Targa: ");
