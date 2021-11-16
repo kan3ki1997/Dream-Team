@@ -53,7 +53,7 @@ public class Main {
         else
             haCasco = false;
 
-        scooter.add(new Automobile(id, targa, haCasco));
+        scooter.add(new Scooter(id, targa, haCasco));
     }
 
     public void addFurgoncino(ArrayList furgoncino) {
@@ -61,17 +61,18 @@ public class Main {
         int id = furgoncino.size() + 1;
         System.out.print("Targa: ");
         String targa = sc.nextLine();
-        furgoncino.add(new Automobile(id, targa));
+        furgoncino.add(new Furgoncino(id, targa));
     }
 
     public void addMonopattino(ArrayList monopattini) {
         int id = monopattini.size() + 1;
-        monopattini.add(new MonopattinoElettrico(id));
+        double[] posizioneGPS = new double[]{0,0};
+        monopattini.add(new MonopattinoElettrico(id, posizioneGPS));
     }
 
     public void addBici(ArrayList bici) {
         int id = bici.size() + 1;
-        bici.add(new MonopattinoElettrico(id));
+        bici.add(new Bici(id));
     }
 
 }
