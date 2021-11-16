@@ -2,9 +2,9 @@ public class Bici extends VeicoloNonImmatricolato{
     boolean haCasco;
     Database database;
 
-    public Bici(int id, double[] posizioneGPS, boolean haCasco) {
-        super(id, posizioneGPS);
-        this.haCasco = haCasco;
+    public Bici(int id) {
+        super(id, new double [] {0,0},0.02);
+        this.haCasco = true;
     }
 
     public void registrazioneBici(Bici bici) {

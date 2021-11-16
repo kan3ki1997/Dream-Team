@@ -5,7 +5,7 @@ public class Utente {
    private int id;
    private final String nome;
    private final String cognome;
-   private final Date dataNascita;
+   private final String dataNascita;
    private final String codiceFiscale;
    private float credito;
    Set<Patente> patenti;
@@ -13,7 +13,7 @@ public class Utente {
    Database database;
 
 
-   public Utente(String nome, String cognome, Date dataNascita, String codiceFiscale, Set<Patente> patenti) {
+   public Utente(String nome, String cognome, String dataNascita, String codiceFiscale, Set<Patente> patenti) {
       this.nome = nome;
       this.cognome = cognome;
       this.dataNascita = dataNascita;
@@ -35,7 +35,7 @@ public class Utente {
       return cognome;
    }
 
-   public Date getDataNascita() {
+   public String getDataNascita() {
       return dataNascita;
    }
 

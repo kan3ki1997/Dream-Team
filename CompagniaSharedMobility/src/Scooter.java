@@ -4,9 +4,9 @@ public class Scooter extends VeicoloBenzina{
     private boolean haCasco;
     Database database;
 
-    public Scooter(int id, String targa) {
+    public Scooter(int id, String targa, boolean haCasco) {
         super(id,new double [] {0,0},targa,100,0.05,new HashSet <> (Arrays.asList(Patente.A,Patente.B)));
-        this.haCasco = true;
+        this.haCasco = haCasco;
     }
 
     public void registraScooter(Scooter scooter) {

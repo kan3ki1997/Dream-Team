@@ -1,14 +1,12 @@
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 public class Automobile extends VeicoloBenzina {
    Database database;
 
    // constructor
-   public Automobile(int id, double[] posizioneGPS, String targa, float serbatoio, double tariffa, List<Patente> patenteNecessaria) {
-      super(id, posizioneGPS, targa, serbatoio, tariffa, patenteNecessaria);
-      patenteNecessaria.add(Patente.B);
+   public Automobile(int id, String targa) {
+      super(id,new double [] {0,0},targa,100,0.05,new HashSet<>(Arrays.asList(Patente.A,Patente.B)));
+
    }
 
    public void registraAutomobile(Automobile automobile) {
