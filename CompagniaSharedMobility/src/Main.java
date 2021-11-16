@@ -44,7 +44,7 @@ public class Main {
             System.out.print("Hai un casco? (s/n): ");
             String rispostaTemp = sc.nextLine();
             risposta = rispostaTemp.toLowerCase();
-            if(!risposta.equals("s") && !risposta.equals("n")
+            if(!risposta.equals("s") && !risposta.equals("n"))
                 System.out.println("Scelta non corretta. Scrivi <s> per Sì e <n> per No.");
             //e che famo se ha il casco o meno?
         }
