@@ -12,6 +12,8 @@ public class Main {
       HashSet<Utente> utenti = new HashSet<Utente>();
       Database database = new Database();
 
+      menu();
+
       /*Automobile ferrari = new Automobile (2, PosizioneIniziale, false, 25.0, 30.0f, "AA000AA");
       Furgoncino piaggioPorter = new Furgoncino(3, PosizioneIniziale, false, 2, 30.0f, "BB123CC");*/
 
@@ -70,6 +72,39 @@ public class Main {
     public void addBici(HashSet bici) {
         int id = bici.size() + 1;
         bici.add(new Bici(id));
+    }
+
+    public static void menu() throws InterruptedException {
+        Scanner sc = new Scanner(System.in);
+        int scelta = 0;
+
+        while (scelta != 1) {
+            System.out.println("\nCosa vuoi fare?");
+            System.out.println("1. Aggiungi un veicolo");
+            System.out.println("2. Esci");
+            System.out.print("Scelta: ");
+            scelta = sc.nextInt();
+            System.out.println("\n");
+
+            switch (scelta){
+                case 1:
+                    menuVeicoli();
+                    break;
+
+                case 2:
+                    System.out.println("Addio.");
+                    break;
+
+                default:
+                    System.out.println("Scelta non corretta.");
+                    break;
+            }
+            if (scelta == 2)
+                break;
+            else
+                scelta = 0;
+            }
+        }
     }
 
 }
