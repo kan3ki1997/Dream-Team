@@ -30,7 +30,7 @@ public class Main {
 
     public void addScooter(HashSet scooter){
         Scanner sc = new Scanner(System.in);
-        int id = scooters.size() + 1;
+        int id = scooter.size() + 1;
         System.out.print("Targa: ");
         String targa = sc.nextLine();
         boolean haCasco = false;
