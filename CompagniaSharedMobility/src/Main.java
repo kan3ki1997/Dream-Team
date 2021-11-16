@@ -71,33 +71,6 @@ public class Main {
         bici.add(new Bici(id));
     }
 
-    public void addUtente(HashSet utenti) {
-        //String nome, String cognome, Date dataNascita, String codiceFiscale, Set<Patente> patenti
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Nome: ");
-        String nome = sc.nextLine();
-        System.out.print("Cognome: ");
-        String cognome = sc.nextLine();
-        System.out.print("Data di nascita: GG/MM/AAAA: ");
-        String dataNascita = sc.nextLine();
-        System.out.print("Codice fiscale: ");
-        String codiceFiscale = sc.nextLine();
-        HashSet <Patente> patentiUtente = new HashSet<Patente>();
-        System.out.print("Patente A presente? (y/n): ");
-        String p = sc.nextLine();
-        if (p == "y")
-            patentiUtente.add(Patente.A);
-        else if(!p.equals("y") && !p.equals("n"))
-            System.out.println("Scelta non corretta. Scrivi <y> per Sì e <n> per No.");
-        System.out.print("Patente B presente? (y/n): ");
-        p = sc.nextLine();
-        if (p == "y")
-            patentiUtente.add(Patente.B);
-        else if(!p.equals("y") && !p.equals("n"))
-            System.out.println("Scelta non corretta. Scrivi <y> per Sì e <n> per No.");
-        if (patentiUtente == null)
-            patentiUtente.add(Patente.nisba);
-        utenti.add(new Utente(nome, cognome, dataNascita, codiceFiscale, patentiUtente));
-    }
+
 
 }
