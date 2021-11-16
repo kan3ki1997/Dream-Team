@@ -8,7 +8,7 @@ public class Main {
 
     public static void main(String[] args) {
       HashSet<Automobile> automobili = new HashSet<Automobile>();
-      HashSet<Scooter> scooter = new HashSet<Scooter>();
+      HashSet<Scooter> scooters = new HashSet<Scooter>();
       HashSet<Furgoncino> furgoncini = new HashSet<Furgoncino>();
       HashSet<MonopattinoElettrico> monopattini = new HashSet<MonopattinoElettrico>();
       HashSet<Bici> bici = new HashSet<Bici>();
@@ -20,7 +20,7 @@ public class Main {
 
    }
 
-   public void addAutomobile(ArrayList automobili){
+   public void addAutomobile(HashSet automobili){
        Scanner sc = new Scanner(System.in);
        int id = automobili.size() + 1;
        System.out.print("Targa: ");
@@ -28,9 +28,9 @@ public class Main {
        automobili.add(new Automobile(id, targa));
    }
 
-    public void addScooter(ArrayList scooter){
+    public void addScooter(HashSet scooters){
         Scanner sc = new Scanner(System.in);
-        int id = scooter.size() + 1;
+        int id = scooters.size() + 1;
         System.out.print("Targa: ");
         String targa = sc.nextLine();
         boolean haCasco = false;
@@ -56,7 +56,7 @@ public class Main {
         scooter.add(new Scooter(id, targa, haCasco));
     }
 
-    public void addFurgoncino(ArrayList furgoncino) {
+    public void addFurgoncino(HashSet furgoncino) {
         Scanner sc = new Scanner(System.in);
         int id = furgoncino.size() + 1;
         System.out.print("Targa: ");
@@ -64,13 +64,13 @@ public class Main {
         furgoncino.add(new Furgoncino(id, targa));
     }
 
-    public void addMonopattino(ArrayList monopattini) {
+    public void addMonopattino(HashSet monopattini) {
         int id = monopattini.size() + 1;
         double[] posizioneGPS = new double[]{0,0};
         monopattini.add(new MonopattinoElettrico(id, posizioneGPS));
     }
 
-    public void addBici(ArrayList bici) {
+    public void addBici(HashSet bici) {
         int id = bici.size() + 1;
         bici.add(new Bici(id));
     }
