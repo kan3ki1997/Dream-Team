@@ -15,7 +15,6 @@ public abstract class VeicoloElettrico extends VeicoloImmatricolato{
 
     public VeicoloElettrico(int id, double[] posizioneGPS, double tariffa, int batteria) {
         super(id, posizioneGPS, tariffa);
-        this.batteria = 100;
     }
 
     public int getBatteria(){

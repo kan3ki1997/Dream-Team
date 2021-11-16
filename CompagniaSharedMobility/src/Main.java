@@ -66,7 +66,8 @@ public class Main {
 
     public void addMonopattino(ArrayList monopattini) {
         int id = monopattini.size() + 1;
-        monopattini.add(new MonopattinoElettrico(id));
+        double[] posizioneGPS = new double[]{0,0};
+        monopattini.add(new MonopattinoElettrico(id, posizioneGPS));
     }
 
     public void addBici(ArrayList bici) {
