@@ -10,6 +10,7 @@ public class Main {
         HashSet<MonopattinoElettrico> monopattini = new HashSet<MonopattinoElettrico>();
         HashSet<Bici> bici = new HashSet<Bici>();
         HashSet<Utente> utenti = new HashSet<Utente>();
+        HashSet<Noleggio> noleggi = new HashSet<Noleggio>();
         Database database = new Database();
 
         menu();
@@ -120,6 +121,10 @@ public class Main {
    }
 
    public void addUtente(){
+        // TODO: da completare
+   }
 
+   public void addNoleggio() {
+        // TODO: da completare
    }
 }
