@@ -5,7 +5,7 @@ public class Main {
 
     public static void main(String[] args) {
         HashSet<Automobile> automobili = new HashSet<Automobile>();
-        HashSet<Scooter> scooter = new HashSet<Scooter>();
+        HashSet<Scooter> scooters = new HashSet<Scooter>();
         HashSet<Furgoncino> furgoncini = new HashSet<Furgoncino>();
         HashSet<MonopattinoElettrico> monopattini = new HashSet<MonopattinoElettrico>();
         HashSet<Bici> bici = new HashSet<Bici>();
@@ -23,12 +23,14 @@ public class Main {
        int id = automobili.size() + 1;
        System.out.print("Targa: ");
        String targa = sc.nextLine();
-       automobili.add(new Automobile(id, targa));
+       Automobile automobile = new Automobile(id, targa);
+       automobili.add(automobile);
+       automobile.registraAutomobile(automobile);
    }
 
-   public void addScooter(HashSet scooter){
+   public void addScooter(HashSet scooters){
         Scanner sc = new Scanner(System.in);
-        int id = scooter.size() + 1;
+        int id = scooters.size() + 1;
         System.out.print("Targa: ");
         String targa = sc.nextLine();
         boolean haCasco = false;
@@ -51,26 +53,34 @@ public class Main {
         else
             haCasco = false;
 
-        scooter.add(new Scooter(id, targa, haCasco));
+        Scooter scooter = new Scooter(id, targa, haCasco);
+        scooters.add(scooter);
+        scooter.registraScooter(scooter);
     }
 
-   public void addFurgoncino(HashSet furgoncino) {
+   public void addFurgoncino(HashSet furgoncini) {
         Scanner sc = new Scanner(System.in);
-        int id = furgoncino.size() + 1;
+        int id = furgoncini.size() + 1;
         System.out.print("Targa: ");
         String targa = sc.nextLine();
-        furgoncino.add(new Furgoncino(id, targa));
+        Furgoncino furgoncino = new Furgoncino(id, targa);
+        furgoncini.add(furgoncino);
+        furgoncino.registraFurgoncino(furgoncino);
     }
 
    public void addMonopattino(HashSet monopattini) {
         int id = monopattini.size() + 1;
         double[] posizioneGPS = new double[]{0,0};
-        monopattini.add(new MonopattinoElettrico(id, posizioneGPS));
+        MonopattinoElettrico monopattino = new MonopattinoElettrico(id, posizioneGPS);
+        monopattini.add(monopattino);
+        monopattino.registraMonopattino(monopattino);
     }
 
    public void addBici(HashSet bici) {
         int id = bici.size() + 1;
-        bici.add(new Bici(id));
+        Bici bicicletta = new Bici(id);
+        bici.add(bicicletta);
+        bicicletta.registrazioneBici(bici);
     }
 
    public static void menu() throws InterruptedException {
