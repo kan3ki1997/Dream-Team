@@ -139,7 +139,7 @@ public class Database {
       biciclette.add(bicicletta.getId());
    }
 
-   public HashMap<String, Integer> getUtenti() {
+   public HashMap<Integer, String> getUtenti() {
       return utenti;
    }
 }
