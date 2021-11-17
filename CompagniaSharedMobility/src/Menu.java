@@ -76,9 +76,9 @@ public class Menu {
         System.out.println("5. Monopattino");
         System.out.println("6. Torna al menu principale");
         System.out.println("7. Esci");
-        int scelta = sc.nextInt();
+        int sceltaAggiungi = sc.nextInt();
 
-            switch (scelta) {
+            switch (sceltaAggiungi) {
                 case 1:
                     Main.addAutomobile(); //Dovrei mettere in input un HashSet di automobili. Come faccio?
                     break;
