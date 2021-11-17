@@ -7,7 +7,7 @@ public class Main {
     public static void main(String[] args) {
         HashSet<Automobile> automobili = new HashSet<Automobile>();
         HashSet<Scooter> scooters = new HashSet<Scooter>();
-        HashSet<Furgoncino> furgoncini = new HashSet<Furgoncino>();
+        HashSet <Furgoncino> furgoncini = new HashSet<Furgoncino>();
         HashSet<MonopattinoElettrico> monopattini = new HashSet<MonopattinoElettrico>();
         HashSet<Bici> bici = new HashSet<Bici>();
         HashSet<Utente> utenti = new HashSet<Utente>();

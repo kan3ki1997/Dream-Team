@@ -1,3 +1,4 @@
+import java.util.HashSet;
 import java.util.Scanner;
 
 public class Menu {
@@ -98,19 +99,19 @@ public class Menu {
 
             switch (sceltaAggiungi) {
                 case 1:
-                    Main.addAutomobile(); //Dovrei mettere in input un HashSet di automobili. Come faccio?
+                    Main.addAutomobile((HashSet)database.getAutomobili()); //Dovrei mettere in input un HashSet di automobili. Come faccio?
                     break;
                 case 2:
-                    Main.addFurgoncino();
+                    Main.addFurgoncino((HashSet)database.getFurgoncini());
                     break;
                 case 3:
-                    Main.addScooter();
+                    Main.addScooter((HashSet)database.getScooters());
                     break;
                 case 4:
-                    Main.addBici();
+                    Main.addBici((HashSet)database.getBiciclette());
                     break;
                 case 5:
-                    Main.addMonopattino();
+                    Main.addMonopattino((HashSet)database.getMonopattiniElettrici());
                     break;
                 case 6:
                     Menu.MenuPrincipale();

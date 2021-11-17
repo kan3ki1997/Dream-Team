@@ -111,6 +111,30 @@ public class Database {
       monopattiniElettrici.add(monopattinoElettrico.getId());
    }
 
+   public Set<Integer> getAutomobili() {
+      return automobili;
+   }
+
+   public Set<Integer> getScooters() {
+      return scooters;
+   }
+
+   public Set<Integer> getFurgoncini() {
+      return furgoncini;
+   }
+
+   public Set<Integer> getMonopattiniElettrici() {
+      return monopattiniElettrici;
+   }
+
+   public Set<Integer> getBiciclette() {
+      return biciclette;
+   }
+
+   public Set<Integer> getNoleggi() {
+      return noleggi;
+   }
+
    public void inserisciBici(Bici bicicletta) {
       biciclette.add(bicicletta.getId());
    }
