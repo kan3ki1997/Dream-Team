@@ -100,7 +100,7 @@ public class Main {
                    break;
 
                case 3:
-                  addUtente(utenti, database);
+                  addUtente();
                   break;
 
                case 4:
@@ -122,7 +122,7 @@ public class Main {
        }
    }
 
-   public void addUtente(HashSet<Utente> utenti, Database database){
+   public static void addUtente(){
        Scanner sc = new Scanner(System.in);
        System.out.println("REGISTRAZIONE UTENTE\n");
        System.out.print("Nome: ");
