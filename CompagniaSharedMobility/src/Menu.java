@@ -81,16 +81,42 @@ public class Menu {
     }
 
     public static int MenuAggiungiVeicoli() {
-        System.out.println("Quale veicolo vuoi aggiungere?");
-        System.out.println("1. Auto");
-        System.out.println("2. Furgoncino");
-        System.out.println("3. Scooter");
-        System.out.println("4. Bici");
-        System.out.println("5. Monopattino");
-        System.out.println("6. Torna al menu principale");
-        System.out.println("7. Esci");
-        int scelta = sc.nextInt();
-        return scelta;
+        int scelta = 0;
+
+        while (scelta != 1 && scelta != 2 && scelta != 3 && scelta != 4 && scelta != 5 && scelta != 6) {
+
+            System.out.println("Quale veicolo vuoi aggiungere?");
+            System.out.println("1. Auto");
+            System.out.println("2. Furgoncino");
+            System.out.println("3. Scooter");
+            System.out.println("4. Bici");
+            System.out.println("5. Monopattino");
+            System.out.println("6. Torna al menu principale");
+            System.out.println("7. Esci");
+            int sceltaAggiungi = sc.nextInt();
+
+            switch (sceltaAggiungi) {
+                case 1:
+                    Main.addAutomobile(); //Dovrei mettere in input un HashSet di automobili. Come faccio?
+                    break;
+                case 2:
+                    Main.addFurgoncino();
+                    break;
+                case 3:
+                    Main.addScooter();
+                    break;
+                case 4:
+                    Main.addBici();
+                    break;
+                case 5:
+                    Main.addMonopattino();
+                    break;
+                case 6:
+                    Menu.MenuPrincipale();
+                case 7:
+                    System.exit(0);
+            }
+        }
     }
 
     public static int MenuRimouviVeicoli() {
