@@ -135,6 +135,5 @@ public class Main {
        System.out.print("Patente (A, B, nessuna: "); //da gestire l'input per una o più patenti
        String patenti = ; //???????????????? poi da cosare col set
        Utente utente = new Utente (nome, cognome, dataNascita, codiceFiscale, patenti);
-       .registrazioneUtente(utenti);
    }
 }
