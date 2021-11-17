@@ -11,6 +11,7 @@ public class Main {
         HashSet<MonopattinoElettrico> monopattini = new HashSet<MonopattinoElettrico>();
         HashSet<Bici> bici = new HashSet<Bici>();
         HashSet<Utente> utenti = new HashSet<Utente>();
+        HashSet<Noleggio> noleggi = new HashSet<Noleggio>();
         Database database = new Database();
 
         menu();
@@ -24,7 +25,9 @@ public class Main {
        int id = automobili.size() + 1;
        System.out.print("Targa: ");
        String targa = sc.nextLine();
-       automobili.add(new Automobile(id, targa));
+       Automobile automobile = new Automobile(id, targa);
+       automobili.add(automobile);
+       automobile.registraAutomobile(automobile);
    }
 
    public void addScooter(HashSet scooter){
@@ -55,23 +58,29 @@ public class Main {
         scooter.add(new Scooter(id, targa, haCasco));
     }
 
-   public void addFurgoncino(HashSet furgoncino) {
+   public void addFurgoncino(HashSet furgoncini) {
         Scanner sc = new Scanner(System.in);
-        int id = furgoncino.size() + 1;
+        int id = furgoncini.size() + 1;
         System.out.print("Targa: ");
         String targa = sc.nextLine();
-        furgoncino.add(new Furgoncino(id, targa));
+        Furgoncino furgoncino = new Furgoncino(id, targa);
+        furgoncini.add(furgoncino);
+        furgoncino.registraFurgoncino(furgoncino);
     }
 
    public void addMonopattino(HashSet monopattini) {
         int id = monopattini.size() + 1;
         double[] posizioneGPS = new double[]{0,0};
-        monopattini.add(new MonopattinoElettrico(id, posizioneGPS));
+        MonopattinoElettrico monopattino = new MonopattinoElettrico(id, posizioneGPS);
+        monopattini.add(monopattino);
+        monopattino.registraMonopattino(monopattino);
     }
 
    public void addBici(HashSet bici) {
         int id = bici.size() + 1;
-        bici.add(new Bici(id));
+        Bici bicicletta = new Bici(id);
+        bici.add(bicicletta);
+        bicicletta.registrazioneBici(bici);
     }
 
    public static void menu(HashSet<Automobile> automobili, HashSet<Scooter> scooter,
