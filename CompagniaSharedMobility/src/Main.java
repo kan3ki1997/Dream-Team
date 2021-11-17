@@ -1,5 +1,6 @@
 import java.util.HashSet;
 import java.util.Scanner;
+import java.util.Set;
 
 public class Main {
 
@@ -129,8 +130,17 @@ public class Main {
        String dataNascita = sc.nextLine();
        System.out.print("Codice fiscale: ");
        String codiceFiscale = sc.nextLine();
-       System.out.print("Patente (A, B, nessuna: "); //da gestire l'input per una o più patenti
-       String patenti = ; //???????????????? poi da cosare col set
-       Utente utente = new Utente (nome, cognome, dataNascita, codiceFiscale, patenti);
+       System.out.print("Patente A?");
+       String risposta = sc.nextLine();
+       Set<Patente> patentiUtente = new Set<Patente>();
+       if (risposta == "yes" || risposta == "y" || risposta == "si" || risposta == "s")
+           patentiUtente.add(Patente.A);
+       System.out.print("Patente B?");
+       risposta = sc.nextLine();
+       if (risposta == "yes" || risposta == "y" || risposta == "si" || risposta == "s")
+           patentiUtente.add(Patente.B);
+       if (patentiUtente.isEmpty())
+           patentiUtente.add(Patente.nisba);
+       Utente utente = new Utente (nome, cognome, dataNascita, codiceFiscale, patentiUtente);
    }
 }
