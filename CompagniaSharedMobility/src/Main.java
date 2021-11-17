@@ -94,7 +94,7 @@ public class Main {
 
            switch (scelta){
                case 1:
-                   Menu.MenuVeicoli();
+                   Menu.MenuAggiungiVeicoli();
                    break;
 
                case 2:
