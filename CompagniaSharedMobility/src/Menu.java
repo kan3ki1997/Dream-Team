@@ -12,10 +12,9 @@ public class Menu {
         while (scelta != 1 && scelta != 2 && scelta != 3 && scelta != 4) {
             System.out.println("\nCosa vuoi fare?");
             System.out.println("1. Aggiungi un veicolo");
-            System.out.println("2. Rimuovi un veicolo");
-            System.out.println("3. Aggiungi utente");
-            System.out.println("4. Noleggia un veicolo");
-            System.out.println("5. Esci");
+            System.out.println("2. Aggiungi utente");
+            System.out.println("3. Noleggia un veicolo");
+            System.out.println("4. Esci");
             System.out.print("Scelta: ");
             scelta = sc.nextInt();
 
@@ -25,18 +24,14 @@ public class Menu {
                     break;
 
                 case 2:
-                    Menu.MenuRimouviVeicoli();
-                    break;
-
-                case 3:
                     Main.addUtente();
                     break;
 
-                case 4:
+                case 3:
                     Menu.MenuNoleggi();
                     break;
 
-                case 5:
+                case 4:
                     System.out.println("Addio.");
                     System.exit(0);
 
@@ -119,18 +114,5 @@ public class Menu {
                     System.exit(0);
             }
         }
-    }
-
-    public static int MenuRimouviVeicoli() {
-        System.out.println("Quale veicolo vuoi rimuovere?");
-        System.out.println("1. Auto");
-        System.out.println("2. Furgoncino");
-        System.out.println("3. Scooter");
-        System.out.println("4. Bici");
-        System.out.println("5. Monopattino");
-        System.out.println("6. Torna al menu principale");
-        System.out.println("7. Esci");
-        int scelta = sc.nextInt();
-        return scelta;
     }
 }
