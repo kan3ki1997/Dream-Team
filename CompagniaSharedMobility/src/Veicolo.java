@@ -1,8 +1,8 @@
 public abstract class Veicolo {
-   int id;
-   double[] posizioneGPS;
-   boolean affittato;
-   double tariffa;
+   private int id;
+   private double[] posizioneGPS;
+   private boolean affittato;
+   private double tariffa;
 
    // constructor
    public Veicolo(int id, double[] posizioneGPS,double tariffa) {
@@ -17,17 +17,9 @@ public abstract class Veicolo {
       this.tariffa = tariffa;
    }
 
-   public Veicolo(){
-
-   }
-
    // getters
    public int getId() {
       return id;
-   }
-
-   public double[] getPosizioneGPS() {
-      return posizioneGPS;
    }
 
    public boolean isAffittato() {
@@ -36,6 +28,10 @@ public abstract class Veicolo {
 
    public double getTariffa() {
       return tariffa;
+   }
+
+   public double[] getPosizioneGPS() {
+      return posizioneGPS;
    }
 
    // setters

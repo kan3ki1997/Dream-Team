@@ -42,10 +42,38 @@ public class Database {
    }
 
    public boolean cercaUtente(Utente utente) {
-      int index = utenti.indexOf(utente);
-      if (index == -1)
-         return false;
-      return true;
+      boolean Search = utenti.containsKey(utente.getId());
+      return Search;
+   }
+
+   public boolean cercaAutomobile(Automobile automobile) {
+      boolean Search = automobili.contains(automobile);
+      return Search;
+   }
+
+   public boolean cercaBici(Bici bici) {
+      boolean Search = biciclette.contains(bici);
+      return Search;
+   }
+
+   public boolean cercaFurgoncino(Furgoncino furgoncino) {
+      boolean Search = furgoncini.contains(furgoncino);
+      return Search;
+   }
+
+   public boolean cercaMonopattino(MonopattinoElettrico monopattinoElettrico) {
+      boolean Search = monopattiniElettrici.contains(monopattinoElettrico);
+      return Search;
+   }
+
+   public boolean cercaScooter(Scooter scooter) {
+      boolean Search = scooters.contains(scooter);
+      return Search;
+   }
+
+   public boolean cercaNoleggio(Noleggio noleggio) {
+      boolean Search = noleggi.contains(noleggio);
+      return Search;
    }
 
    public void eliminaAuto(Automobile automobile) {
@@ -69,23 +97,23 @@ public class Database {
    }
 
    public void inserisciAuto(Automobile automobile) {
-      automobili.add(automobile);
+      automobili.add(automobile.getId());
    }
 
    public void inserisciScooter(Scooter scooter) {
-      scooters.add(scooter);
+      scooters.add(scooter.getId());
    }
 
    public void inserisciFurgoncino(Furgoncino furgoncino) {
-      furgoncini.add(furgoncino);
+      furgoncini.add(furgoncino.getId());
    }
 
    public void inserisciMonopattino(MonopattinoElettrico monopattinoElettrico) {
-      monopattiniElettrici.add(monopattinoElettrico);
+      monopattiniElettrici.add(monopattinoElettrico.getId());
    }
 
    public void inserisciBici(Bici bicicletta) {
-      biciclette.add(bicicletta);
+      biciclette.add(bicicletta.getId());
    }
 
 }

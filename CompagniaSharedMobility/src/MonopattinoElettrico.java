@@ -1,14 +1,17 @@
 import java.util.List;
+import java.util.Set;
 
 public class MonopattinoElettrico extends VeicoloElettrico{
-    Database database;
+    private double[] posizioneGPS;
+    private Database database;
 
     public MonopattinoElettrico(int id, double[] posizioneGPS) {
-        //this.id = boh;
-        //this.posizioneGPS = PosizioneGPS;
-
-        super(); //batteria
-        this.tariffa = 0.15;
-        database.registrazioneMonopattino(this);
+        super(id, posizioneGPS, 0.15);
     }
+
+    public void registraMonopattino(MonopattinoElettrico monopattinoElettrico) {
+        database.registrazioneMonopattino(monopattinoElettrico);
+    }
+
+
 }

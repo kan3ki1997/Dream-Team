@@ -8,7 +8,6 @@ public class Noleggio {
    private Date dataInizio;
    private Date dataFine;
    private int id;
-   Database database;
 
    public Noleggio(Utente utente, Veicolo veicolo, Date dataInizio, Date dataFine, int id) {
       this.utente = utente;
@@ -16,13 +15,15 @@ public class Noleggio {
       this.dataInizio = dataInizio;
       this.dataFine = dataFine;
       this.id = id;
-      database.registrazioneNoleggio(this);
    }
 
    // metodi
-   public void registraUtente() {
-      database.registrazioneUtente(this.utente);
+   public void registraUtente(Utente utente) {
+      database.registrazioneUtente(utente);
+   }
 
+   public void registraNoleggio(Noleggio noleggio) {
+      database.registrazioneNoleggio(noleggio);
    }
 
    public int getId() {
@@ -40,7 +41,7 @@ public class Noleggio {
 
    public boolean veicoliDisponibili() {
       if (this.veicolo instanceof VeicoloBenzina && ((VeicoloBenzina) this.veicolo).getSerbatoio() < 10) return false; // serbatoio non sufficente
-      else if (this.veicolo.affittato == true) return false; // il veicolo è affittato
+      else if (this.veicolo.isAffittato() == true) return false; // il veicolo è affittato
       else return true;
    }
 

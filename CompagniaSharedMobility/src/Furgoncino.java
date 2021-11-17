@@ -1,13 +1,16 @@
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 public class Furgoncino extends VeicoloBenzina {
-   private final List<Patente> patenteNecessaria = new ArrayList<Patente>();
+
+
    Database database;
 
-   public Furgoncino(int id, double[] posizioneGPS, boolean affittato, double tariffa, float serbatoio, String targa) {
-      super(id, posizioneGPS, affittato, tariffa, serbatoio, targa, patenteNecessaria);
-      patenteNecessaria.add(Patente.B);
-      database.registrazioneFurgoncino(this);
+
+   public Furgoncino(int id, String targa) {
+      super(id,new double [] {0,0},targa,100,0.05,new HashSet <> (Arrays.asList(Patente.B)));
+   }
+
+   public void registraFurgoncino(Furgoncino furgoncino) {
+      database.registrazioneFurgoncino(furgoncino);
    }
 }
