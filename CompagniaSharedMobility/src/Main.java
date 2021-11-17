@@ -85,28 +85,16 @@ public class Main {
     }
 
    public static void menu() throws InterruptedException {
-       Scanner sc = new Scanner(System.in);
-       int scelta = 0;
+        int scelta = 0;
+        MenuPrincipale();
 
        while (scelta != 1) {
-           System.out.println("\nCosa vuoi fare?");
-           System.out.println("1. Aggiungi un veicolo");
-           System.out.println("2. Aggiungi utente");
-           System.out.println("3. Esci");
-           System.out.print("Scelta: ");
-           scelta = sc.nextInt();
+
            System.out.println("\n");
 
            switch (scelta){
                case 1:
-                   System.out.println("Quale veicolo vuoi noleggiare?");
-                   System.out.println("1. Auto");
-                   System.out.println("2. Furgoncino");
-                   System.out.println("3. Scooter");
-                   System.out.println("4. Bici");
-                   System.out.println("5. Monopattino");
-                   System.out.println("6. Torna al menu principale");
-                   System.out.println("7. Esci");
+                   MenuVeicoli();
                    break;
 
                case 2:
@@ -133,5 +121,28 @@ public class Main {
 
    public void addNoleggio() {
         // TODO: da completare
+   }
+
+   public static int MenuPrincipale() {
+       Scanner sc = new Scanner(System.in);
+       System.out.println("\nCosa vuoi fare?");
+       System.out.println("1. Aggiungi un veicolo");
+       System.out.println("2. Aggiungi utente");
+       System.out.println("3. Esci");
+       System.out.print("Scelta: ");
+       int scelta = sc.nextInt();
+       return scelta;
+   }
+
+   public static int MenuVeicoli() {
+        Scanner sc = new Scanner(System.in);
+       System.out.println("Quale veicolo vuoi noleggiare?");
+       System.out.println("1. Auto");
+       System.out.println("2. Furgoncino");
+       System.out.println("3. Scooter");
+       System.out.println("4. Bici");
+       System.out.println("5. Monopattino");
+       System.out.println("6. Torna al menu principale");
+       System.out.println("7. Esci");
    }
 }
