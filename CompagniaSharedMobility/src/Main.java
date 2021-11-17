@@ -81,7 +81,7 @@ public class Main {
         int id = bici.size() + 1;
         Bici bicicletta = new Bici(id);
         bici.add(bicicletta);
-        bicicletta.registrazioneBici(bici);
+        bicicletta.registrazioneBici(bicicletta);
     }
 
    public static void menu() throws InterruptedException {
