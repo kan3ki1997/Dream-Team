@@ -116,4 +116,7 @@ public class Database {
       biciclette.add(bicicletta.getId());
    }
 
+   public HashMap<String, Integer> getUtenti() {
+      return utenti;
+   }
 }
