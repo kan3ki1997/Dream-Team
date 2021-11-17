@@ -115,10 +115,6 @@ public class Main {
                    System.out.println("Scelta non corretta.");
                    break;
            }
-           if (scelta == dibbase)
-               break;
-           else
-               scelta = 0;
        }
    }
 
