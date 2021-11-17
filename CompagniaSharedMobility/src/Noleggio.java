@@ -52,15 +52,6 @@ public class Noleggio {
     }
 
     // getters and setters
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
     public Utente getUtente() {
         return utente;
     }
@@ -68,10 +59,10 @@ public class Noleggio {
     /*
     @param utente L'utente che noleggia il veicolo
      */
+
     public void setUtente(Utente utente) {
         this.utente = utente;
     }
-
     public Veicolo getVeicolo() {
         return veicolo;
     }
@@ -79,10 +70,10 @@ public class Noleggio {
     /*
     @param veicolo Il veicolo da noleggiare
      */
+
     public void setVeicolo(Veicolo veicolo) {
         this.veicolo = veicolo;
     }
-
     public Date getDataInizio() {
         return dataInizio;
     }
@@ -90,10 +81,10 @@ public class Noleggio {
     /*
     @param dataInizio Data inizio noleggio
      */
+
     public void setDataInizio(Date dataInizio) {
         this.dataInizio = dataInizio;
     }
-
     public Date getDataFine() {
         return dataFine;
     }
@@ -101,7 +92,16 @@ public class Noleggio {
     /*
     @param dataFine Data fine noleggio
      */
+
     public void setDataFine(Date dataFine) {
         this.dataFine = dataFine;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 }
