@@ -2,7 +2,7 @@ import java.util.HashMap;
 import java.util.Set;
 
 public class Database {
-   private HashMap<String, Integer> utenti;
+   private HashMap<Integer, String> utenti;
    private Set<Integer> automobili;
    private Set<Integer> scooters;
    private Set<Integer> furgoncini;
@@ -12,7 +12,6 @@ public class Database {
 
    public Database() {
    }
-
    public void registrazioneUtente(Utente utente) {
       utenti.put(utente.getCognome(), utente.getId());
    }
@@ -41,8 +40,8 @@ public class Database {
       scooters.add(noleggio.getId());
    }
 
-   public boolean cercaUtente(Utente utente) {
-      boolean Search = utenti.containsKey(utente.getId());
+   public boolean cercaUtente(int id) {
+      boolean Search = utenti.containsKey(id);
       return Search;
    }
 

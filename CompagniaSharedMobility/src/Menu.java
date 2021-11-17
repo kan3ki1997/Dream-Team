@@ -51,8 +51,9 @@ public class Menu {
     }
 
     public static int MenuNoleggi() {
-        System.out.print("Inserisci nome utente: ");
-        String nomeUtente = sc.nextLine();
+        System.out.print("Inserisci ID utente: ");
+        int idUtente = sc.nextInt();
+        if(database.cercaUtente(database.getUtenti().get(idUtente)))
 
         scelta = 0;
         while (scelta != 5) {

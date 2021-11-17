@@ -35,7 +35,7 @@ public class Noleggio {
    }
 
    public void loginUtente() {
-      if (!database.cercaUtente(utente)) System.out.println("utente non registrato");
+      if (!database.cercaUtente(id)) System.out.println("utente non registrato");
       else System.out.println("login effettuato con successo");
    }
 
