@@ -103,9 +103,11 @@ public class Main {
 
                case 3:
                   addUtente(utenti, database);
+                  break;
 
                case 4:
                    Menu.MenuNoleggi();
+                   break;
 
                case 5:
                    System.out.println("Addio.");
