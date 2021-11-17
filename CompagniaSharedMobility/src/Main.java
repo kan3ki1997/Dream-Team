@@ -83,11 +83,46 @@ public class Main {
         bicicletta.registrazioneBici(bicicletta);
     }
 
-   public static void menu() throws InterruptedException {
+   public static void menu() {
         int scelta = 0;
         Menu.MenuPrincipale();
-    }
 
+       while (scelta != 1 && scelta != 2 && scelta != 3 && scelta != 4) {
+
+           System.out.println("\n");
+
+           switch (scelta){
+               case 1:
+                   Menu.MenuAggiungiVeicoli();
+                   break;
+
+               case 2:
+                   Menu.MenuRimouviVeicoli();
+                   break;
+
+               case 3:
+                  addUtente();
+                  break;
+
+               case 4:
+                   Menu.MenuNoleggi();
+                   break;
+
+               case 5:
+                   System.out.println("Addio.");
+                   //System.exit(0);
+                   break;
+
+               default:
+                   System.out.println("Scelta non corretta.");
+                   //break;
+           }
+           if (scelta == 5)
+               break;
+           else
+               scelta = 0;
+       }
+   }
 
    public static void addUtente(){
        Scanner sc = new Scanner(System.in);
