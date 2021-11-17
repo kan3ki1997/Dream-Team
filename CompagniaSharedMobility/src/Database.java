@@ -13,7 +13,7 @@ public class Database {
    public Database() {
    }
    public void registrazioneUtente(Utente utente) {
-      utenti.put(utente.getCognome(), utente.getId());
+      utenti.put(utente.getId(), utente.getCognome());
    }
 
    public void registrazioneAutomobile(Automobile automobile) {
