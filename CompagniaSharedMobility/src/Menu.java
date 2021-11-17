@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Menu {
-    Scanner sc = new Scanner(System.in);
+    static Scanner sc = new Scanner(System.in);
 
     public static int MenuPrincipale() {
         System.out.println("\nCosa vuoi fare?");
