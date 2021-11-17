@@ -54,7 +54,7 @@ public class Main {
         else
             haCasco = false;
 
-        Scooter scooter = new Scooter(id, targa, haCasco);
+        Scooter scooter = new Scooter(id, targa);
         scooters.add(scooter);
         scooter.registraScooter(scooter);
     }
