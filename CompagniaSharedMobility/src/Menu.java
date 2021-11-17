@@ -15,7 +15,7 @@ public class Menu {
         return scelta;
     }
 
-    public static void MenuNoleggi() {
+    public static int MenuNoleggi() {
         System.out.println("Quale veicolo vuoi noleggiare?");
         System.out.println("1. Auto");
         System.out.println("2. Furgoncino");
@@ -24,9 +24,11 @@ public class Menu {
         System.out.println("5. Monopattino");
         System.out.println("6. Torna al menu principale");
         System.out.println("7. Esci");
+        int scelta = sc.nextInt();
+        return scelta;
     }
 
-    public static void MenuAggiungiVeicoli() {
+    public static int MenuAggiungiVeicoli() {
         System.out.println("Quale veicolo vuoi aggiungere?");
         System.out.println("1. Auto");
         System.out.println("2. Furgoncino");
@@ -35,9 +37,11 @@ public class Menu {
         System.out.println("5. Monopattino");
         System.out.println("6. Torna al menu principale");
         System.out.println("7. Esci");
+        int scelta = sc.nextInt();
+        return scelta;
     }
 
-    public static void MenuRimouviVeicoli() {
+    public static int MenuRimouviVeicoli() {
         System.out.println("Quale veicolo vuoi rimuovere?");
         System.out.println("1. Auto");
         System.out.println("2. Furgoncino");
@@ -46,5 +50,7 @@ public class Menu {
         System.out.println("5. Monopattino");
         System.out.println("6. Torna al menu principale");
         System.out.println("7. Esci");
+        int scelta = sc.nextInt();
+        return scelta;
     }
 }
