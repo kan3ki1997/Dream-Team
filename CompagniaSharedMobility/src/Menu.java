@@ -77,7 +77,7 @@ public class Menu {
         return scelta;
     }
 
-    public static int MenuAggiungiVeicoli() {
+    public static void MenuAggiungiVeicoli() {
         int scelta = 0;
 
         while (scelta != 1 && scelta != 2 && scelta != 3 && scelta != 4 && scelta != 5 && scelta != 6) {
