@@ -5,11 +5,11 @@ public class Noleggio {
     private Utente utente;
     private Veicolo veicolo;
     private Database database;
-    private Date dataInizio;
-    private Date dataFine;
+    private String dataInizio;
+    private String dataFine;
     private int id;
 
-    public Noleggio(Utente utente, Veicolo veicolo, Date dataInizio, Date dataFine, int id) {
+    public Noleggio(Utente utente, Veicolo veicolo, String dataInizio, String dataFine, int id) {
         this.utente = utente;
         this.veicolo = veicolo;
         this.dataInizio = dataInizio;
@@ -74,7 +74,7 @@ public class Noleggio {
     public void setVeicolo(Veicolo veicolo) {
         this.veicolo = veicolo;
     }
-    public Date getDataInizio() {
+    public String getDataInizio() {
         return dataInizio;
     }
 
@@ -82,10 +82,10 @@ public class Noleggio {
     @param dataInizio Data inizio noleggio
      */
 
-    public void setDataInizio(Date dataInizio) {
+    public void setDataInizio(String dataInizio) {
         this.dataInizio = dataInizio;
     }
-    public Date getDataFine() {
+    public String getDataFine() {
         return dataFine;
     }
 
@@ -93,7 +93,7 @@ public class Noleggio {
     @param dataFine Data fine noleggio
      */
 
-    public void setDataFine(Date dataFine) {
+    public void setDataFine(String dataFine) {
         this.dataFine = dataFine;
     }
 
