@@ -86,14 +86,8 @@ public class Main {
    public static void menu() throws InterruptedException {
         int scelta = 0;
         Menu.MenuPrincipale();
+    }
 
-       while (scelta != 5) {
-
-           System.out.println("\n");
-
-
-       }
-   }
 
    public static void addUtente(){
        Scanner sc = new Scanner(System.in);
