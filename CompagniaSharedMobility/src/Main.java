@@ -98,7 +98,7 @@ public class Main {
                    break;
 
                case 2:
-                  addUtente();
+                  addUtente(utenti, database);
 
                case dibbase:
                    System.out.println("Addio.");
@@ -115,12 +115,21 @@ public class Main {
        }
    }
 
-   public void addUtente(){
-        // TODO: da completare
-   }
-
-   public void addNoleggio() {
-        // TODO: da completare
+   public void addUtente(HashSet<Utente> utenti, Database database){
+       Scanner sc = new Scanner(System.in);
+       System.out.println("REGISTRAZIONE UTENTE\n");
+       System.out.print("Nome: ");
+       String nome = sc.nextLine();
+       System.out.print("Cognome: ");
+       String cognome = sc.nextLine();
+       System.out.print("Data di nascita (dd/mm/yyyy): ");
+       String dataNascita = sc.nextLine();
+       System.out.print("Codice fiscale: ");
+       String codiceFiscale = sc.nextLine();
+       System.out.print("Patente (A, B, nessuna: "); //da gestire l'input per una o più patenti
+       String patenti = ; //???????????????? poi da cosare col set
+       utenti.add(nome, cognome, dataNascita, codiceFiscale, patenti);
+       database.registrazioneUtente(utenti);
    }
 
    public static int MenuPrincipale() {
