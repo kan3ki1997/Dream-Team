@@ -91,31 +91,7 @@ public class Main {
 
            System.out.println("\n");
 
-           switch (scelta){
-               case 1:
-                   Menu.MenuAggiungiVeicoli();
-                   break;
 
-               case 2:
-                   Menu.MenuRimouviVeicoli();
-                   break;
-
-               case 3:
-                  addUtente();
-                  break;
-
-               case 4:
-                   Menu.MenuNoleggi();
-                   break;
-
-               case 5:
-                   System.out.println("Addio.");
-                   System.exit(0);
-
-               default:
-                   System.out.println("Scelta non corretta.");
-                   break;
-           }
        }
    }
 
@@ -132,7 +108,7 @@ public class Main {
        String codiceFiscale = sc.nextLine();
        System.out.print("Patente A?");
        String risposta = sc.nextLine();
-       Set<Patente> patentiUtente = new Set<Patente>();
+       Set<Patente> patentiUtente = new HashSet<Patente>();
        if (risposta == "yes" || risposta == "y" || risposta == "si" || risposta == "s")
            patentiUtente.add(Patente.A);
        System.out.print("Patente B?");
