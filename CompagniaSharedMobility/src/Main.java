@@ -113,4 +113,13 @@ public class Main {
        Utente utente = new Utente (nome, cognome, dataNascita, codiceFiscale, patentiUtente);
        utente.registraUtente(utente);
    }
+
+   // Qui mi sono bloccata..
+   public static void removeBici(HashSet bici) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Id della bici da rimuovere: ");
+        int id = sc.nextInt();
+        bici.remove(Bici)
+
+    }
 }
