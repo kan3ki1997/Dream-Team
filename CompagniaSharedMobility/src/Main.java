@@ -1,5 +1,6 @@
 import java.util.HashSet;
 import java.util.Scanner;
+import java.util.Set;
 
 public class Main {
 
@@ -73,7 +74,9 @@ public class Main {
         bici.add(new Bici(id));
     }
 
-   public static void menu() throws InterruptedException {
+   public static void menu(HashSet<Automobile> automobili, HashSet<Scooter> scooter,
+                           HashSet<Furgoncino> furgoncini, HashSet<MonopattinoElettrico>,
+           HashSet<Bici> bici, HashSet<Utente> utenti, Database database) throws InterruptedException {
        Scanner sc = new Scanner(System.in);
        int scelta = 0;
 
@@ -92,7 +95,7 @@ public class Main {
                    break;
 
                case 2:
-                  addUtente();
+                  addUtente(utenti, database);
 
                case dibbase:
                    System.out.println("Addio.");
@@ -109,7 +112,20 @@ public class Main {
        }
    }
 
-   public void addUtente(){
-
+   public void addUtente(HashSet<Utente> utenti, Database database){
+       Scanner sc = new Scanner(System.in);
+       System.out.println("REGISTRAZIONE UTENTE\n");
+       System.out.print("Nome: ");
+       String nome = sc.nextLine();
+       System.out.print("Cognome: ");
+       String cognome = sc.nextLine();
+       System.out.print("Data di nascita (dd/mm/yyyy): ");
+       String dataNascita = sc.nextLine();
+       System.out.print("Codice fiscale: ");
+       String codiceFiscale = sc.nextLine();
+       System.out.print("Patente (A, B, nessuna: "); //da gestire l'input per una o più patenti
+       String patenti = ; //???????????????? poi da cosare col set
+       utenti.add(nome, cognome, dataNascita, codiceFiscale, patenti);
+       database.registrazioneUtente(utenti);
    }
 }
