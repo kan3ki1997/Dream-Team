@@ -18,7 +18,7 @@ public class Main {
 
    }
 
-   public void addAutomobile(HashSet automobili){
+   public static void addAutomobile(HashSet automobili){
        Scanner sc = new Scanner(System.in);
        int id = automobili.size() + 1;
        System.out.print("Targa: ");
@@ -28,7 +28,7 @@ public class Main {
        automobile.registraAutomobile(automobile);
    }
 
-   public void addScooter(HashSet scooters){
+   public static void addScooter(HashSet scooters){
         Scanner sc = new Scanner(System.in);
         int id = scooters.size() + 1;
         System.out.print("Targa: ");
@@ -58,7 +58,7 @@ public class Main {
         scooter.registraScooter(scooter);
     }
 
-   public void addFurgoncino(HashSet furgoncini) {
+   public static void addFurgoncino(HashSet furgoncini) {
         Scanner sc = new Scanner(System.in);
         int id = furgoncini.size() + 1;
         System.out.print("Targa: ");
@@ -68,7 +68,7 @@ public class Main {
         furgoncino.registraFurgoncino(furgoncino);
     }
 
-   public void addMonopattino(HashSet monopattini) {
+   public static void addMonopattino(HashSet monopattini) {
         int id = monopattini.size() + 1;
         double[] posizioneGPS = new double[]{0,0};
         MonopattinoElettrico monopattino = new MonopattinoElettrico(id, posizioneGPS);
@@ -76,7 +76,7 @@ public class Main {
         monopattino.registraMonopattino(monopattino);
     }
 
-   public void addBici(HashSet bici) {
+   public static void addBici(HashSet bici) {
         int id = bici.size() + 1;
         Bici bicicletta = new Bici(id);
         bici.add(bicicletta);
@@ -147,5 +147,6 @@ public class Main {
        if (patentiUtente.isEmpty())
            patentiUtente.add(Patente.nisba);
        Utente utente = new Utente (nome, cognome, dataNascita, codiceFiscale, patentiUtente);
+       utente.registraUtente(utente);
    }
 }
