@@ -1,8 +1,9 @@
 import java.util.Scanner;
 
-public static class Menu {
+public class Menu {
+    Scanner sc = new Scanner(System.in);
+
     public static int MenuPrincipale() {
-        Scanner sc = new Scanner(System.in);
         System.out.println("\nCosa vuoi fare?");
         System.out.println("1. Aggiungi un veicolo");
         System.out.println("2. Rimuovi un veicolo");
@@ -14,8 +15,7 @@ public static class Menu {
         return scelta;
     }
 
-    public static int MenuNoleggi() {
-        Scanner sc = new Scanner(System.in);
+    public static void MenuNoleggi() {
         System.out.println("Quale veicolo vuoi noleggiare?");
         System.out.println("1. Auto");
         System.out.println("2. Furgoncino");
@@ -26,8 +26,7 @@ public static class Menu {
         System.out.println("7. Esci");
     }
 
-    public static int MenuAggiungiVeicoli() {
-        Scanner sc = new Scanner(System.in);
+    public static void MenuAggiungiVeicoli() {
         System.out.println("Quale veicolo vuoi aggiungere?");
         System.out.println("1. Auto");
         System.out.println("2. Furgoncino");
@@ -38,8 +37,7 @@ public static class Menu {
         System.out.println("7. Esci");
     }
 
-    public static int MenuRimouviVeicoli() {
-        Scanner sc = new Scanner(System.in);
+    public static void MenuRimouviVeicoli() {
         System.out.println("Quale veicolo vuoi rimuovere?");
         System.out.println("1. Auto");
         System.out.println("2. Furgoncino");
