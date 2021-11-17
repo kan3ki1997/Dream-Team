@@ -134,7 +134,7 @@ public class Main {
        String codiceFiscale = sc.nextLine();
        System.out.print("Patente (A, B, nessuna: "); //da gestire l'input per una o più patenti
        String patenti = ; //???????????????? poi da cosare col set
-       utenti.add(nome, cognome, dataNascita, codiceFiscale, patenti);
-       database.registrazioneUtente(utenti);
+       Utente utente = new Utente (nome, cognome, dataNascita, codiceFiscale, patenti);
+       .registrazioneUtente(utenti);
    }
 }
