@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
-public static class Menu {
+public class Menu {
+
     public static int MenuPrincipale() {
         Scanner sc = new Scanner(System.in);
         System.out.println("\nCosa vuoi fare?");
@@ -24,6 +25,8 @@ public static class Menu {
         System.out.println("5. Monopattino");
         System.out.println("6. Torna al menu principale");
         System.out.println("7. Esci");
+        int scelta = sc.nextInt();
+        return scelta;
     }
 
     public static int MenuAggiungiVeicoli() {
@@ -36,6 +39,8 @@ public static class Menu {
         System.out.println("5. Monopattino");
         System.out.println("6. Torna al menu principale");
         System.out.println("7. Esci");
+        int scelta = sc.nextInt();
+        return scelta;
     }
 
     public static int MenuRimouviVeicoli() {
@@ -48,5 +53,7 @@ public static class Menu {
         System.out.println("5. Monopattino");
         System.out.println("6. Torna al menu principale");
         System.out.println("7. Esci");
+        int scelta = sc.nextInt();
+        return scelta;
     }
 }
