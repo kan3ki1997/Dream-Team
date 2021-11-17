@@ -15,8 +15,6 @@ public class Main {
 
         Menu.MenuPrincipale();
 
-        /*Automobile ferrari = new Automobile (2, PosizioneIniziale, false, 25.0, 30.0f, "AA000AA");
-        Furgoncino piaggioPorter = new Furgoncino(3, PosizioneIniziale, false, 2, 30.0f, "BB123CC");*/
    }
 
    public void addAutomobile(HashSet automobili){
