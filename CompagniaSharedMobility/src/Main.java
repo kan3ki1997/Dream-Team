@@ -99,7 +99,14 @@ public class Main {
 
            switch (scelta){
                case 1:
-                   menuVeicoli();
+                   System.out.println("Quale veicolo vuoi noleggiare?");
+                   System.out.println("1. Auto");
+                   System.out.println("2. Furgoncino");
+                   System.out.println("3. Scooter");
+                   System.out.println("4. Bici");
+                   System.out.println("5. Monopattino");
+                   System.out.println("6. Torna al menu principale");
+                   System.out.println("7. Esci");
                    break;
 
                case 2:
