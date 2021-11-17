@@ -88,7 +88,7 @@ public class Main {
         int scelta = 0;
         Menu.MenuPrincipale();
 
-       while (scelta != 1) {
+       while (scelta != 5) {
 
            System.out.println("\n");
 
@@ -98,11 +98,20 @@ public class Main {
                    break;
 
                case 2:
-                  addUtente(utenti, database);
-
-               case dibbase:
-                   System.out.println("Addio.");
+                   Menu.MenuRimouviVeicoli();
                    break;
+
+               case 3:
+                  addUtente(utenti, database);
+                  break;
+
+               case 4:
+                   Menu.MenuNoleggi();
+                   break;
+
+               case 5:
+                   System.out.println("Addio.");
+                   System.exit(0);
 
                default:
                    System.out.println("Scelta non corretta.");
