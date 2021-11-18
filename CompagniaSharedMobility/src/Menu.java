@@ -1,3 +1,4 @@
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Scanner;
 
@@ -67,7 +68,7 @@ public class Menu {
         int idVeicolo = sc.nextInt();
 
         if (q.equals("A")) {
-            Veicolo veicoloScelto = database.getAutomobili().
+            Automobile veicolo = database.getAutomobili().get(idVeicolo);
         }
 
         scelta = 0;
@@ -113,19 +114,19 @@ public class Menu {
 
             switch (sceltaAggiungi) {
                 case 1:
-                    Main.addAutomobile((HashSet)database.getAutomobili()); //Dovrei mettere in input un HashSet di automobili. Come faccio?
+                    Main.addAutomobile((HashMap)database.getAutomobili()); //Dovrei mettere in input un HashSet di automobili. Come faccio?
                     break;
                 case 2:
-                    Main.addFurgoncino((HashSet)database.getFurgoncini());
+                    Main.addFurgoncino((HashMap)database.getFurgoncini());
                     break;
                 case 3:
-                    Main.addScooter((HashSet)database.getScooters());
+                    Main.addScooter((HashMap)database.getScooters());
                     break;
                 case 4:
-                    Main.addBici((HashSet)database.getBiciclette());
+                    Main.addBici((HashMap)database.getBiciclette());
                     break;
                 case 5:
-                    Main.addMonopattino((HashSet)database.getMonopattiniElettrici());
+                    Main.addMonopattino((HashMap)database.getMonopattiniElettrici());
                     break;
                 case 6:
                     Menu.MenuPrincipale();

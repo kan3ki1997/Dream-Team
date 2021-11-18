@@ -25,7 +25,7 @@ public class Database {
    }
 
    public void registrazioneMonopattino(MonopattinoElettrico monopattinoElettrico) {
-      scooters.put(monopattinoElettrico.getId(), monopattinoElettrico);
+      monopattiniElettrici.put(monopattinoElettrico.getId(), monopattinoElettrico);
    }
 
    public void registrazioneBici(Bici bici) {
@@ -111,27 +111,27 @@ public class Database {
       monopattiniElettrici.put(monopattinoElettrico.getId(), monopattinoElettrico);
    }
 
-   public Set<Integer> getAutomobili() {
+   public HashMap<Integer, Automobile> getAutomobili() {
       return automobili;
    }
 
-   public Set<Integer> getScooters() {
+   public HashMap<Integer, Scooter> getScooters() {
       return scooters;
    }
 
-   public Set<Integer> getFurgoncini() {
+   public HashMap<Integer, Furgoncino> getFurgoncini() {
       return furgoncini;
    }
 
-   public Set<Integer> getMonopattiniElettrici() {
+   public HashMap<Integer, MonopattinoElettrico> getMonopattiniElettrici() {
       return monopattiniElettrici;
    }
 
-   public Set<Integer> getBiciclette() {
+   public HashMap<Integer, Bici> getBiciclette() {
       return biciclette;
    }
 
-   public Set<Integer> getNoleggi() {
+   public HashMap<Integer, Noleggio> getNoleggi() {
       return noleggi;
    }
 
