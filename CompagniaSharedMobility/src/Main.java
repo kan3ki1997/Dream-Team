@@ -7,7 +7,7 @@ public class Main {
 
     public static void main(String[] args) {
         HashMap<Integer, Automobile> automobili = new HashMap<Integer, Automobile>();
-        HashMap<Scooter> scooters = new HashMap<Integer, Scooter>();
+        HashMap<Integer, Scooter> scooters = new HashMap<Integer, Scooter>();
         HashMap <Integer, Furgoncino> furgoncini = new HashMap<Integer, Furgoncino>();
         HashMap<Integer, MonopattinoElettrico> monopattini = new HashMap<Integer, MonopattinoElettrico>();
         HashMap<Integer, Bici> bici = new HashMap<Integer, Bici>();
@@ -19,17 +19,17 @@ public class Main {
 
    }
 
-   public static void addAutomobile(HashSet automobili){
+   public static void addAutomobile(HashMap automobili){
        Scanner sc = new Scanner(System.in);
        int id = automobili.size() + 1;
        System.out.print("Targa: ");
        String targa = sc.nextLine();
        Automobile automobile = new Automobile(id, targa);
-       automobili.add(automobile);
+       automobili.put(id, automobile);
        automobile.registraAutomobile(automobile);
    }
 
-   public static void addScooter(HashSet scooters){
+   public static void addScooter(HashMap scooters){
         Scanner sc = new Scanner(System.in);
         int id = scooters.size() + 1;
         System.out.print("Targa: ");
@@ -55,33 +55,37 @@ public class Main {
             haCasco = false;
 
         Scooter scooter = new Scooter(id, targa);
-        scooters.add(scooter);
+        scooters.put(id, scooter);
         scooter.registraScooter(scooter);
+
     }
 
-   public static void addFurgoncino(HashSet furgoncini) {
+   public static void addFurgoncino(HashMap furgoncini) {
         Scanner sc = new Scanner(System.in);
         int id = furgoncini.size() + 1;
         System.out.print("Targa: ");
         String targa = sc.nextLine();
         Furgoncino furgoncino = new Furgoncino(id, targa);
-        furgoncini.add(furgoncino);
+        furgoncini.put(id, furgoncino);
         furgoncino.registraFurgoncino(furgoncino);
+
     }
 
-   public static void addMonopattino(HashSet monopattini) {
+   public static void addMonopattino(HashMap monopattini) {
         int id = monopattini.size() + 1;
         double[] posizioneGPS = new double[]{0,0};
         MonopattinoElettrico monopattino = new MonopattinoElettrico(id, posizioneGPS);
-        monopattini.add(monopattino);
+        monopattini.put(id, monopattino);
         monopattino.registraMonopattino(monopattino);
+
     }
 
    public static void addBici(HashMap bici) {
         int id = bici.size() + 1;
         Bici bicicletta = new Bici(id);
-        bici.put(int id, bicicletta);
+        bici.put(id, bicicletta);
         bicicletta.registrazioneBici(bicicletta);
+
     }
 
    public static void menu() {
