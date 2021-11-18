@@ -47,9 +47,28 @@ public class Menu {
     }
 
     public static int MenuNoleggi() {
-        System.out.print("Inserisci ID utente: ");
+        System.out.println("Inserisci ID utente: ");
         int idUtente = sc.nextInt();
-        if(database.cercaUtente(idUtente))
+
+        // Se non esiste l'utente, lo rimando al menu principale per registrarsi
+        if(database.cercaUtente(idUtente) == false) {
+            System.out.println("Utente non reigstrato. Seleziona l'opzione 2 per registrarti.");
+            Menu.MenuPrincipale();
+        }
+        System.out.println("Quale veicolo vuoi noleggiare?");
+        System.out.println("A. Automobile");
+        System.out.println("B. Bici");
+        System.out.println("C. Scooter");
+        System.out.println("D. Furgoncino");
+        System.out.println("E. Monopattino Elettrico");
+        String q = sc.nextLine();
+
+        System.out.println("Inserisci ID veicolo");
+        int idVeicolo = sc.nextInt();
+
+        if (q.equals("A")) {
+            Veicolo veicoloScelto = (Automobile)
+        }
 
         scelta = 0;
         while (scelta != 5) {

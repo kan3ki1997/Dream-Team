@@ -2,7 +2,7 @@ import java.util.HashMap;
 import java.util.Set;
 
 public class Database {
-   private HashMap<Integer, String> utenti;
+   private HashMap<Integer, Utente> utenti;
    private Set<Integer> automobili;
    private Set<Integer> scooters;
    private Set<Integer> furgoncini;
@@ -13,7 +13,7 @@ public class Database {
    public Database() {
    }
    public void registrazioneUtente(Utente utente) {
-      utenti.put(utente.getId(), utente.getCognome());
+      utenti.put(utente.getId(), utente);
    }
 
    public void registrazioneAutomobile(Automobile automobile) {
@@ -139,7 +139,7 @@ public class Database {
       biciclette.add(bicicletta.getId());
    }
 
-   public HashMap<Integer, String> getUtenti() {
+   public HashMap<Integer, Utente> getUtenti() {
       return utenti;
    }
 }

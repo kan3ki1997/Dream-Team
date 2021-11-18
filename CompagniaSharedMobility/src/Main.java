@@ -1,3 +1,4 @@
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Scanner;
 import java.util.Set;
@@ -10,7 +11,7 @@ public class Main {
         HashSet <Furgoncino> furgoncini = new HashSet<Furgoncino>();
         HashSet<MonopattinoElettrico> monopattini = new HashSet<MonopattinoElettrico>();
         HashSet<Bici> bici = new HashSet<Bici>();
-        HashSet<Utente> utenti = new HashSet<Utente>();
+        HashMap<Integer, Utente> utenti = new HashMap<Integer, Utente>();
         HashSet<Noleggio> noleggi = new HashSet<Noleggio>();
         Database database = new Database();
 
