@@ -1,4 +1,4 @@
-public abstract class Veicolo {
+public class Veicolo {
    private int id;
    private double[] posizioneGPS;
    private boolean affittato;

@@ -1,7 +1,7 @@
 import java.util.List;
 import java.util.Set;
 
-public abstract class VeicoloElettrico extends VeicoloImmatricolato{
+public class VeicoloElettrico extends VeicoloImmatricolato{
     private int batteria;
 
     /*public VeicoloElettrico(int id, double[] posizioneGPS, String targa, int batteria,double tariffa,List<Patente> patenteNecessaria) {

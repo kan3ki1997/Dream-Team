@@ -1,6 +1,6 @@
 
 
-abstract class VeicoloNonImmatricolato extends Veicolo {
+class VeicoloNonImmatricolato extends Veicolo {
 
     public VeicoloNonImmatricolato(int id, double[] posizioneGPS,  double tariffa) {
 
