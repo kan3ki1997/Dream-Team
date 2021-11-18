@@ -17,7 +17,11 @@ public abstract class Veicolo {
       this.tariffa = tariffa;
    }
 
-   // getters
+    public Veicolo() {
+
+    }
+
+    // getters
    public int getId() {
       return id;
    }

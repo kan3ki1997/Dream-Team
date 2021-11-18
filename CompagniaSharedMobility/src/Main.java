@@ -77,10 +77,10 @@ public class Main {
         monopattino.registraMonopattino(monopattino);
     }
 
-   public static void addBici(HashSet bici) {
+   public static void addBici(HashMap bici) {
         int id = bici.size() + 1;
         Bici bicicletta = new Bici(id);
-        bici.add(bicicletta);
+        bici.put(int id, bicicletta);
         bicicletta.registrazioneBici(bicicletta);
     }
 

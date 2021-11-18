@@ -48,8 +48,10 @@ public class Menu {
     }
 
     public static int MenuNoleggi() {
+        int idNoleggio = database.getNoleggi().size() + 1;
         System.out.println("Inserisci ID utente: ");
         int idUtente = sc.nextInt();
+        Utente vUtente = database.getUtenti().get(idUtente);
 
         // Se non esiste l'utente, lo rimando al menu principale per registrarsi
         if(database.cercaUtente(idUtente) == false) {
@@ -66,10 +68,30 @@ public class Menu {
 
         System.out.println("Inserisci ID veicolo");
         int idVeicolo = sc.nextInt();
+        Veicolo vNoleggio = new Veicolo();
 
         if (q.equals("A")) {
-            Automobile veicolo = database.getAutomobili().get(idVeicolo);
+            vNoleggio = (Automobile) database.getAutomobili().get(idVeicolo);
         }
+        if (q.equals("B")) {
+            vNoleggio = (Bici) database.getBiciclette().get(idVeicolo);
+        }
+        if (q.equals("C")) {
+            vNoleggio = (Scooter) database.getScooters().get(idVeicolo);
+        }
+        if (q.equals("D")) {
+            vNoleggio = (Furgoncino) database.getFurgoncini().get(idVeicolo);
+        }
+        if (q.equals("E")) {
+            vNoleggio = (MonopattinoElettrico) database.getMonopattiniElettrici().get(idVeicolo);
+        }
+
+        System.out.println("Inserisci data inizio:");
+        String dataInizio = sc.nextLine();
+        System.out.println("Inserisci data fine:");
+        String dataFine = sc.nextLine();
+
+        Noleggio noleggio = new Noleggio(vUtente, vNoleggio, dataInizio, dataFine,idNoleggio);
 
         scelta = 0;
         while (scelta != 5) {
