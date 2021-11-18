@@ -3,12 +3,12 @@ import java.util.Set;
 
 public class Database {
    private HashMap<Integer, Utente> utenti;
-   private Set<Integer> automobili;
-   private Set<Integer> scooters;
-   private Set<Integer> furgoncini;
-   private Set<Integer> monopattiniElettrici;
-   private Set<Integer> biciclette;
-   private Set<Integer> noleggi;
+   private HashMap<Integer, Automobile> automobili;
+   private HashMap<Integer, Scooter> scooters;
+   private HashMap<Integer, Furgoncino> furgoncini;
+   private HashMap<Integer, MonopattinoElettrico> monopattiniElettrici;
+   private HashMap<Integer, Bici> biciclette;
+   private HashMap<Integer, Noleggio> noleggi;
 
    public Database() {
    }
@@ -17,27 +17,27 @@ public class Database {
    }
 
    public void registrazioneAutomobile(Automobile automobile) {
-      automobili.add(automobile.getId());
+      automobili.put(automobile.getId(), automobile);
    }
 
    public void registrazioneFurgoncino(Furgoncino furgoncino) {
-      scooters.add(furgoncino.getId());
+      furgoncini.put(furgoncino.getId(), furgoncino);
    }
 
    public void registrazioneMonopattino(MonopattinoElettrico monopattinoElettrico) {
-      scooters.add(monopattinoElettrico.getId());
+      scooters.put(monopattinoElettrico.getId(), monopattinoElettrico);
    }
 
    public void registrazioneBici(Bici bici) {
-      scooters.add(bici.getId());
+      biciclette.put(bici.getId(), bici);
    }
 
    public void registrazioneScooter(Scooter scooter) {
-      scooters.add(scooter.getId());
+      scooters.put(scooter.getId(), scooter);
    }
 
    public void registrazioneNoleggio(Noleggio noleggio) {
-      scooters.add(noleggio.getId());
+      noleggi.put(noleggio.getId(), noleggio);
    }
 
    public boolean cercaUtente(int id) {
@@ -46,32 +46,32 @@ public class Database {
    }
 
    public boolean cercaAutomobile(Automobile automobile) {
-      boolean Search = automobili.contains(automobile);
+      boolean Search = automobili.containsKey(automobile.getId());
       return Search;
    }
 
    public boolean cercaBici(Bici bici) {
-      boolean Search = biciclette.contains(bici);
+      boolean Search = biciclette.containsKey(bici.getId());
       return Search;
    }
 
    public boolean cercaFurgoncino(Furgoncino furgoncino) {
-      boolean Search = furgoncini.contains(furgoncino);
+      boolean Search = furgoncini.containsKey(furgoncino.getId());
       return Search;
    }
 
    public boolean cercaMonopattino(MonopattinoElettrico monopattinoElettrico) {
-      boolean Search = monopattiniElettrici.contains(monopattinoElettrico);
+      boolean Search = monopattiniElettrici.containsKey(monopattinoElettrico.getId());
       return Search;
    }
 
    public boolean cercaScooter(Scooter scooter) {
-      boolean Search = scooters.contains(scooter);
+      boolean Search = scooters.containsKey(scooter.getId());
       return Search;
    }
 
    public boolean cercaNoleggio(Noleggio noleggio) {
-      boolean Search = noleggi.contains(noleggio);
+      boolean Search = noleggi.containsKey(noleggio.getId());
       return Search;
    }
 
@@ -96,19 +96,19 @@ public class Database {
    }
 
    public void inserisciAuto(Automobile automobile) {
-      automobili.add(automobile.getId());
+      automobili.put(automobile.getId(), automobile);
    }
 
    public void inserisciScooter(Scooter scooter) {
-      scooters.add(scooter.getId());
+      scooters.put(scooter.getId(), scooter);
    }
 
    public void inserisciFurgoncino(Furgoncino furgoncino) {
-      furgoncini.add(furgoncino.getId());
+      furgoncini.put(furgoncino.getId(), furgoncino);
    }
 
    public void inserisciMonopattino(MonopattinoElettrico monopattinoElettrico) {
-      monopattiniElettrici.add(monopattinoElettrico.getId());
+      monopattiniElettrici.put(monopattinoElettrico.getId(), monopattinoElettrico);
    }
 
    public Set<Integer> getAutomobili() {
@@ -136,10 +136,12 @@ public class Database {
    }
 
    public void inserisciBici(Bici bicicletta) {
-      biciclette.add(bicicletta.getId());
+      biciclette.put(bicicletta.getId(), bicicletta);
    }
 
    public HashMap<Integer, Utente> getUtenti() {
       return utenti;
    }
+
+
 }

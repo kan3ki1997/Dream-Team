@@ -6,13 +6,13 @@ import java.util.Set;
 public class Main {
 
     public static void main(String[] args) {
-        HashSet<Automobile> automobili = new HashSet<Automobile>();
-        HashSet<Scooter> scooters = new HashSet<Scooter>();
-        HashSet <Furgoncino> furgoncini = new HashSet<Furgoncino>();
-        HashSet<MonopattinoElettrico> monopattini = new HashSet<MonopattinoElettrico>();
-        HashSet<Bici> bici = new HashSet<Bici>();
+        HashMap<Integer, Automobile> automobili = new HashMap<Integer, Automobile>();
+        HashMap<Scooter> scooters = new HashMap<Integer, Scooter>();
+        HashMap <Integer, Furgoncino> furgoncini = new HashMap<Integer, Furgoncino>();
+        HashMap<Integer, MonopattinoElettrico> monopattini = new HashMap<Integer, MonopattinoElettrico>();
+        HashMap<Integer, Bici> bici = new HashMap<Integer, Bici>();
         HashMap<Integer, Utente> utenti = new HashMap<Integer, Utente>();
-        HashSet<Noleggio> noleggi = new HashSet<Noleggio>();
+        HashMap<Integer, Noleggio> noleggi = new HashMap<Integer, Noleggio>();
         Database database = new Database();
 
         Menu.MenuPrincipale();

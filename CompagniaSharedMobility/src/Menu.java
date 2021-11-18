@@ -67,7 +67,7 @@ public class Menu {
         int idVeicolo = sc.nextInt();
 
         if (q.equals("A")) {
-            Veicolo veicoloScelto = (Automobile)
+            Veicolo veicoloScelto = database.getAutomobili().
         }
 
         scelta = 0;
