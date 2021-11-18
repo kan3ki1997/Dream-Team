@@ -73,17 +73,21 @@ public class Menu {
         if (q.equals("A")) {
             vNoleggio = (Automobile) database.getAutomobili().get(idVeicolo);
         }
-        if (q.equals("B")) {
+        else if (q.equals("B")) {
             vNoleggio = (Bici) database.getBiciclette().get(idVeicolo);
         }
-        if (q.equals("C")) {
+        else if (q.equals("C")) {
             vNoleggio = (Scooter) database.getScooters().get(idVeicolo);
         }
-        if (q.equals("D")) {
+        else if (q.equals("D")) {
             vNoleggio = (Furgoncino) database.getFurgoncini().get(idVeicolo);
         }
-        if (q.equals("E")) {
+        else if (q.equals("E")) {
             vNoleggio = (MonopattinoElettrico) database.getMonopattiniElettrici().get(idVeicolo);
+        }
+        else {
+            System.out.println("Input non corretto");
+            Menu.MenuNoleggi();
         }
 
         System.out.println("Inserisci data inizio:");
